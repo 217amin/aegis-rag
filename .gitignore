@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+ENV/
+
+# Local environment
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data artifacts
+data/texts/*.jsonl
+data/embeddings/
+data/eval/results_*.json
+data/eval/results_*.csv
+data/eval/plots/
+data/eval/reports/
+data/eval/experiment_manifest.json
+
+# Large or local models
+models/results*/
+models/*.bin
+models/*.gguf
+
+# Notebook outputs
+*.nbconvert.ipynb

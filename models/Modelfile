@@ -1,0 +1,2 @@
+FROM ./hotel_model_gguf
+PARAMETER temperature 0.0

@@ -1,0 +1,133 @@
+[
+  {
+    "query": "What time is standard check-in?",
+    "relevant_chunk_ids": [
+      "01_Guest_Stay_and_Incidentals_Handbook_p1_c1",
+      "02_Hosted_Travel_and_Accommodation_Policy_p2_c1",
+      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p1_c1"
+    ]
+  },
+  {
+    "query": "Can I check in at noon for free?",
+    "relevant_chunk_ids": [
+      "01_Guest_Stay_and_Incidentals_Handbook_p1_c1",
+      "02_Hosted_Travel_and_Accommodation_Policy_p2_c1",
+      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p1_c1"
+    ]
+  },
+  {
+    "query": "How much is self-parking?",
+    "relevant_chunk_ids": [
+      "01_Guest_Stay_and_Incidentals_Handbook_p2_c1",
+      "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy_p1_c1"
+    ]
+  },
+  {
+    "query": "Is valet parking free for all guests?",
+    "relevant_chunk_ids": [
+      "01_Guest_Stay_and_Incidentals_Handbook_p2_c1",
+      "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy_p1_c1"
+    ]
+  },
+  {
+    "query": "What is the late checkout fee?",
+    "relevant_chunk_ids": [
+      "01_Guest_Stay_and_Incidentals_Handbook_p1_c1",
+      "02_Hosted_Travel_and_Accommodation_Policy_p2_c1",
+      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p1_c1"
+    ]
+  },
+  {
+    "query": "Can I stay after 2 PM without paying?",
+    "relevant_chunk_ids": [
+      "01_Guest_Stay_and_Incidentals_Handbook_p1_c1"
+    ]
+  },
+  {
+    "query": "Are pets allowed and what is the fee?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query": "Do service animals pay a fee?",
+    "relevant_chunk_ids": [
+      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p1_c1",
+      "05_Guest_Safety,_Accessibility,_and_Reasonable_Comfort_Standard_p1_c1"
+    ]
+  },
+  {
+    "query": "What are quiet hours?",
+    "relevant_chunk_ids": [
+      "01_Guest_Stay_and_Incidentals_Handbook_p1_c2"
+    ]
+  },
+  {
+    "query": "Is smoking allowed on balconies?",
+    "relevant_chunk_ids": [
+      "01_Guest_Stay_and_Incidentals_Handbook_p1_c2",
+      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p2_c1"
+    ]
+  },
+  {
+    "query": "What internet network should I use?",
+    "relevant_chunk_ids": [
+      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p2_c1"
+    ]
+  },
+  {
+    "query": "Is parking always covered for corporate accounts?",
+    "relevant_chunk_ids": [
+      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p1_c1",
+      "01_Guest_Stay_and_Incidentals_Handbook_p2_c1",
+      "02_Hosted_Travel_and_Accommodation_Policy_p1_c2"
+    ]
+  },
+  {
+    "query": "What happens if I don’t have a receipt?",
+    "relevant_chunk_ids": [
+      "04_Receipts,_Reimbursements,_and_Supporting_Documentation_Standard_p2_c1"
+    ]
+  },
+  {
+    "query": "Can I expense valet parking?",
+    "relevant_chunk_ids": [
+      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p2_c1",
+      "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy_p1_c1"
+    ]
+  },
+  {
+    "query": "What is the garage height limit?",
+    "relevant_chunk_ids": [
+      "01_Guest_Stay_and_Incidentals_Handbook_p2_c1",
+      "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy_p1_c1",
+      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p2_c1"
+    ]
+  },
+  {
+    "query": "How much is thermal circuit day access at the spa?",
+    "relevant_chunk_ids": [
+      "01_Guest_Stay_and_Incidentals_Handbook_p2_c1"
+    ]
+  },
+  {
+    "query": "What is the benchmark rate for personal vehicle mileage reimbursement?",
+    "relevant_chunk_ids": [
+      "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy_p2_c1"
+    ]
+  },
+  {
+    "query": "What are the service fees for private food-and-beverage events?",
+    "relevant_chunk_ids": [
+      "06_Conference,_Hosted_Dining,_and_Event_Billing_Policy_p1_c1"
+    ]
+  },
+  {
+    "query": "Should accessible room requests be prioritized over aesthetic preferences?",
+    "relevant_chunk_ids": [
+      "05_Guest_Safety,_Accessibility,_and_Reasonable_Comfort_Standard_p1_c1"
+    ]
+  },
+  {
+    "query": "Does the hotel have a swimming pool?",
+    "relevant_chunk_ids": []
+  }
+]
