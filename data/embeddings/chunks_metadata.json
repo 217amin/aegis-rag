@@ -1,0 +1,299 @@
+[
+  {
+    "chunk_id": "01_Guest_Stay_and_Incidentals_Handbook_p1_c1",
+    "source": "01_Guest_Stay_and_Incidentals_Handbook.pdf",
+    "page": 1,
+    "title": "01 Guest Stay And Incidentals Handbook",
+    "section": null,
+    "tokens_est": 222,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "01_Guest_Stay_and_Incidentals_Handbook_p1_c2",
+    "source": "01_Guest_Stay_and_Incidentals_Handbook.pdf",
+    "page": 1,
+    "title": "01 Guest Stay And Incidentals Handbook",
+    "section": null,
+    "tokens_est": 82,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "01_Guest_Stay_and_Incidentals_Handbook_p2_c1",
+    "source": "01_Guest_Stay_and_Incidentals_Handbook.pdf",
+    "page": 2,
+    "title": "01 Guest Stay And Incidentals Handbook",
+    "section": null,
+    "tokens_est": 219,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "01_Guest_Stay_and_Incidentals_Handbook_p2_c2",
+    "source": "01_Guest_Stay_and_Incidentals_Handbook.pdf",
+    "page": 2,
+    "title": "01 Guest Stay And Incidentals Handbook",
+    "section": null,
+    "tokens_est": 18,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "02_Hosted_Travel_and_Accommodation_Policy_p1_c1",
+    "source": "02_Hosted_Travel_and_Accommodation_Policy.pdf",
+    "page": 1,
+    "title": "02 Hosted Travel And Accommodation Policy",
+    "section": null,
+    "tokens_est": 221,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "02_Hosted_Travel_and_Accommodation_Policy_p1_c2",
+    "source": "02_Hosted_Travel_and_Accommodation_Policy.pdf",
+    "page": 1,
+    "title": "02 Hosted Travel And Accommodation Policy",
+    "section": null,
+    "tokens_est": 79,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "02_Hosted_Travel_and_Accommodation_Policy_p2_c1",
+    "source": "02_Hosted_Travel_and_Accommodation_Policy.pdf",
+    "page": 2,
+    "title": "02 Hosted Travel And Accommodation Policy",
+    "section": null,
+    "tokens_est": 191,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy_p1_c1",
+    "source": "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy.pdf",
+    "page": 1,
+    "title": "03 Ground Transportation, Parking, And Personal Vehicle Policy",
+    "section": null,
+    "tokens_est": 210,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy_p2_c1",
+    "source": "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy.pdf",
+    "page": 2,
+    "title": "03 Ground Transportation, Parking, And Personal Vehicle Policy",
+    "section": null,
+    "tokens_est": 173,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "04_Receipts,_Reimbursements,_and_Supporting_Documentation_Standard_p1_c1",
+    "source": "04_Receipts,_Reimbursements,_and_Supporting_Documentation_Standard.pdf",
+    "page": 1,
+    "title": "04 Receipts, Reimbursements, And Supporting Documentation Standard",
+    "section": null,
+    "tokens_est": 184,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "04_Receipts,_Reimbursements,_and_Supporting_Documentation_Standard_p2_c1",
+    "source": "04_Receipts,_Reimbursements,_and_Supporting_Documentation_Standard.pdf",
+    "page": 2,
+    "title": "04 Receipts, Reimbursements, And Supporting Documentation Standard",
+    "section": "Standard – Operational Guidance",
+    "tokens_est": 148,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "05_Guest_Safety,_Accessibility,_and_Reasonable_Comfort_Standard_p1_c1",
+    "source": "05_Guest_Safety,_Accessibility,_and_Reasonable_Comfort_Standard.pdf",
+    "page": 1,
+    "title": "05 Guest Safety, Accessibility, And Reasonable Comfort Standard",
+    "section": null,
+    "tokens_est": 185,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "05_Guest_Safety,_Accessibility,_and_Reasonable_Comfort_Standard_p2_c1",
+    "source": "05_Guest_Safety,_Accessibility,_and_Reasonable_Comfort_Standard.pdf",
+    "page": 2,
+    "title": "05 Guest Safety, Accessibility, And Reasonable Comfort Standard",
+    "section": null,
+    "tokens_est": 147,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "06_Conference,_Hosted_Dining,_and_Event_Billing_Policy_p1_c1",
+    "source": "06_Conference,_Hosted_Dining,_and_Event_Billing_Policy.pdf",
+    "page": 1,
+    "title": "06 Conference, Hosted Dining, And Event Billing Policy",
+    "section": null,
+    "tokens_est": 164,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "06_Conference,_Hosted_Dining,_and_Event_Billing_Policy_p2_c1",
+    "source": "06_Conference,_Hosted_Dining,_and_Event_Billing_Policy.pdf",
+    "page": 2,
+    "title": "06 Conference, Hosted Dining, And Event Billing Policy",
+    "section": null,
+    "tokens_est": 121,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "07_Department_Approval_and_Chargeback_Workflow_p1_c1",
+    "source": "07_Department_Approval_and_Chargeback_Workflow.pdf",
+    "page": 1,
+    "title": "07 Department Approval And Chargeback Workflow",
+    "section": null,
+    "tokens_est": 105,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "07_Department_Approval_and_Chargeback_Workflow_p2_c1",
+    "source": "07_Department_Approval_and_Chargeback_Workflow.pdf",
+    "page": 2,
+    "title": "07 Department Approval And Chargeback Workflow",
+    "section": null,
+    "tokens_est": 107,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p1_c1",
+    "source": "08_Corporate_Stay_FAQ_for_Sponsored_Guests.pdf",
+    "page": 1,
+    "title": "08 Corporate Stay Faq For Sponsored Guests",
+    "section": null,
+    "tokens_est": 127,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p2_c1",
+    "source": "08_Corporate_Stay_FAQ_for_Sponsored_Guests.pdf",
+    "page": 2,
+    "title": "08 Corporate Stay Faq For Sponsored Guests",
+    "section": null,
+    "tokens_est": 104,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "09_Early_Arrival_and_Inventory_Management_Policy_p1_c1",
+    "source": "09_Early_Arrival_and_Inventory_Management_Policy.pdf",
+    "page": 1,
+    "title": "09 Early Arrival And Inventory Management Policy",
+    "section": null,
+    "tokens_est": 96,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "09_Early_Arrival_and_Inventory_Management_Policy_p2_c1",
+    "source": "09_Early_Arrival_and_Inventory_Management_Policy.pdf",
+    "page": 2,
+    "title": "09 Early Arrival And Inventory Management Policy",
+    "section": null,
+    "tokens_est": 67,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "10_Room_Upgrade_and_Allocation_Guidelines_p1_c1",
+    "source": "10_Room_Upgrade_and_Allocation_Guidelines.pdf",
+    "page": 1,
+    "title": "10 Room Upgrade And Allocation Guidelines",
+    "section": null,
+    "tokens_est": 92,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "10_Room_Upgrade_and_Allocation_Guidelines_p2_c1",
+    "source": "10_Room_Upgrade_and_Allocation_Guidelines.pdf",
+    "page": 2,
+    "title": "10 Room Upgrade And Allocation Guidelines",
+    "section": null,
+    "tokens_est": 66,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "11_Wi-Fi_and_Network_Access_Policy_p1_c1",
+    "source": "11_Wi-Fi_and_Network_Access_Policy.pdf",
+    "page": 1,
+    "title": "11 Wi Fi And Network Access Policy",
+    "section": null,
+    "tokens_est": 89,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "11_Wi-Fi_and_Network_Access_Policy_p2_c1",
+    "source": "11_Wi-Fi_and_Network_Access_Policy.pdf",
+    "page": 2,
+    "title": "11 Wi Fi And Network Access Policy",
+    "section": null,
+    "tokens_est": 64,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "12_Noise_and_Disturbance_Enforcement_Policy_p1_c1",
+    "source": "12_Noise_and_Disturbance_Enforcement_Policy.pdf",
+    "page": 1,
+    "title": "12 Noise And Disturbance Enforcement Policy",
+    "section": null,
+    "tokens_est": 93,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "12_Noise_and_Disturbance_Enforcement_Policy_p2_c1",
+    "source": "12_Noise_and_Disturbance_Enforcement_Policy.pdf",
+    "page": 2,
+    "title": "12 Noise And Disturbance Enforcement Policy",
+    "section": null,
+    "tokens_est": 66,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "13_Pet_and_Service_Animal_Compliance_Policy_p1_c1",
+    "source": "13_Pet_and_Service_Animal_Compliance_Policy.pdf",
+    "page": 1,
+    "title": "13 Pet And Service Animal Compliance Policy",
+    "section": null,
+    "tokens_est": 93,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "13_Pet_and_Service_Animal_Compliance_Policy_p2_c1",
+    "source": "13_Pet_and_Service_Animal_Compliance_Policy.pdf",
+    "page": 2,
+    "title": "13 Pet And Service Animal Compliance Policy",
+    "section": null,
+    "tokens_est": 66,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "14_Billing_Dispute_Resolution_Procedure_p1_c1",
+    "source": "14_Billing_Dispute_Resolution_Procedure.pdf",
+    "page": 1,
+    "title": "14 Billing Dispute Resolution Procedure",
+    "section": "Billing Dispute Resolution Procedure",
+    "tokens_est": 91,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "14_Billing_Dispute_Resolution_Procedure_p2_c1",
+    "source": "14_Billing_Dispute_Resolution_Procedure.pdf",
+    "page": 2,
+    "title": "14 Billing Dispute Resolution Procedure",
+    "section": "Billing Dispute Resolution Procedure – Operational Guidance",
+    "tokens_est": 65,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "15_Security_and_After-Hours_Access_Policy_p1_c1",
+    "source": "15_Security_and_After-Hours_Access_Policy.pdf",
+    "page": 1,
+    "title": "15 Security And After Hours Access Policy",
+    "section": null,
+    "tokens_est": 92,
+    "chunking_method": "semantic"
+  },
+  {
+    "chunk_id": "15_Security_and_After-Hours_Access_Policy_p2_c1",
+    "source": "15_Security_and_After-Hours_Access_Policy.pdf",
+    "page": 2,
+    "title": "15 Security And After Hours Access Policy",
+    "section": null,
+    "tokens_est": 66,
+    "chunking_method": "semantic"
+  }
+]
