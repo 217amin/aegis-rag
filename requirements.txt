@@ -20,3 +20,5 @@ numpy>=1.26.0
 scikit-learn>=1.4.0
 pydantic>=2.7.0
 ollama>=0.3.0
+streamlit>=1.36.0
+langchain-openai>=0.2.0

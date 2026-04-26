@@ -1,3 +1,15 @@
+---
+title: AEGIS-RAG
+emoji: 🛡️
+colorFrom: indigo
+colorTo: blue
+sdk: streamlit
+sdk_version: 1.36.0
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # AEGIS-RAG — Production-Style RAG with Hybrid Retrieval, Reranking & Safe Abstention
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://python.org)
@@ -176,6 +188,85 @@ python -m scripts.eval --profile hybrid_rerank
 # 5. Ask a single question
 python -m scripts.run_rag --query "What time is standard check-in?" --profile hybrid_rerank
 ```
+
+---
+
+# AEGIS-RAG · Streamlit app deployment notes
+
+## Local run
+
+```bash
+# Make sure your indexes are built first
+python -m scripts.ingest
+python -m scripts.build_index
+
+# Make sure Ollama is running
+ollama pull llama3.1:8b
+ollama serve  # in another terminal
+
+# Install Streamlit and run
+pip install -r requirements-app.txt
+streamlit run app.py
+```
+
+The app loads the same retriever and generation pipeline
+(`scripts.retriever.HybridRetriever` + `scripts.run_rag.answer_question`).
+The abstention threshold sliders override `NO_ANSWER_MIN_RERANK_SCORE` and
+`NO_ANSWER_MIN_FUSED_SCORE` live, per-query, without touching `config.py`.
+
+## Hugging Face Spaces deployment
+
+Ollama is **not available** on Spaces, so generation must go to a remote
+LLM endpoint. Two options:
+
+### Option A — Hugging Face Inference API (free tier OK)
+
+1. Create a HF Space with the **Streamlit** SDK.
+2. Push repo to it (including `data/embeddings/chroma/` and
+   `data/embeddings/bm25_index.pkl` — these are small enough for git LFS).
+3. In Space → Settings → Variables and secrets, add:
+   - `GEN_BACKEND` = `hf_inference`
+   - `HF_TOKEN` = (a token with read access)
+   - `HF_MODEL_ID` = `meta-llama/Llama-3.1-8B-Instruct` (or any chat-completion model)
+
+### Option B — OpenAI-compatible endpoint (OpenAI, Together, Groq, etc.)
+
+1. Same Space setup.
+2. Add secrets:
+   - `GEN_BACKEND` = `openai_compat`
+   - `OPENAI_API_KEY` = your key
+   - `OPENAI_BASE_URL` = `https://api.openai.com/v1` (or Together / Groq URL)
+   - `OPENAI_MODEL` = `gpt-4o-mini` (or `meta-llama/Llama-3.3-70B-Instruct-Turbo` for Together)
+
+The app auto-detects the backend at startup. If `GEN_BACKEND` is unset, it
+defaults to Ollama (i.e. the local-dev path).
+
+## Memory budget on HF Spaces free tier (16 GB)
+
+Rough RAM at startup with `hybrid_rerank` profile:
+
+| Component | RAM |
+|---|---|
+| Streamlit + Python | ~200 MB |
+| E5-large-v2 embedding model | ~1.3 GB |
+| Chroma vector store | ~100 MB (depends on corpus) |
+| BM25 pickled index | ~50 MB |
+| Cross-encoder ms-marco-MiniLM-L-6-v2 | ~90 MB |
+| **Total** | **~1.8 GB** |
+
+Plenty of headroom. Generation is remote, so no LLM weights loaded locally.
+
+## Demo GIF for README
+
+After deploying, record a 30-second walkthrough showing:
+
+1. Click an example "Standard policy lookup" → confident answer with citations
+2. Click the "Abstention test (out of scope)" example → 🛡️ **Abstained** banner
+3. Lower the rerank threshold slider → ask the same question → answer now generated
+4. Open the "Retrieved evidence" expander → show per-chunk scores and retrievers
+
+Tools: [Kap](https://getkap.co) (macOS) or [ScreenToGif](https://www.screentogif.com) (Windows).
+Embed at the top of `README.md` under the title.
 
 ---
 
