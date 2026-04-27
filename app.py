@@ -12,12 +12,12 @@ Layout:
   scores and which retrievers contributed (BM25 / dense / rerank), and latency.
 
 Wiring:
-- Imports your existing scripts.retriever.HybridRetriever and scripts.run_rag.answer_question.
+- Imports existing scripts.retriever.HybridRetriever and scripts.run_rag.answer_question.
 - Loads the retriever (and reranker, if profile uses one) ONCE via @st.cache_resource.
 - Reloads when the user switches profile (different reranker requirements).
 
 Generation backend (LLM):
-- Default = Ollama (matches your CLI): set GEN_BACKEND=ollama (or leave unset).
+- Default = Ollama: set GEN_BACKEND=ollama (or leave unset).
 - For Hugging Face Spaces / Cloud: set GEN_BACKEND=hf_inference and HF_TOKEN.
 - Or use any OpenAI-compatible endpoint: set GEN_BACKEND=openai_compat,
   OPENAI_BASE_URL, OPENAI_API_KEY, OPENAI_MODEL.
@@ -47,7 +47,7 @@ from typing import Any
 import streamlit as st
 
 # ---------------------------------------------------------------------------
-# Page config
+# Page config — must be the first Streamlit call
 # ---------------------------------------------------------------------------
 st.set_page_config(
     page_title="AEGIS-RAG · Reliable RAG with Abstention",
@@ -71,27 +71,27 @@ from scripts.run_rag import answer_question  # noqa: E402
 # ---------------------------------------------------------------------------
 PROFILE_META: dict[str, dict[str, str]] = {
     "hybrid_rerank": {
-        "label": "Hybrid + Rerank (best quality)",
+        "label": "🥇 Hybrid + Rerank (best quality)",
         "description": (
             "BM25 + Dense + RRF fusion + Cross-Encoder reranking. "
             "Best nDCG@5 (0.80). ~7.6× slower than retrieval-only."
         ),
     },
     "hybrid": {
-        "label": "Hybrid (BM25 + Dense)",
+        "label": "⚡ Hybrid (BM25 + Dense)",
         "description": (
             "BM25 + Dense + RRF fusion, no reranking. "
             "Strong recall (≈0.85), low latency (~95 ms retrieval)."
         ),
     },
     "dense_only": {
-        "label": "Dense only",
+        "label": "🧠 Dense only",
         "description": (
             "E5 embeddings + Chroma. Strong on paraphrase, weaker on exact wording."
         ),
     },
     "bm25_only": {
-        "label": "BM25 only",
+        "label": "🔤 BM25 only",
         "description": (
             "Lexical retrieval only. Strong on exact wording, weaker on paraphrase."
         ),
@@ -100,32 +100,32 @@ PROFILE_META: dict[str, dict[str, str]] = {
 
 EXAMPLE_QUESTIONS: list[dict[str, str]] = [
     {
-        "label": "Standard policy lookup",
+        "label": "✅ Standard policy lookup",
         "question": "What time is standard hotel check-in?",
         "hint": "Should produce a confident, grounded answer.",
     },
     {
-        "label": "Specific fee question",
+        "label": "💰 Specific fee question",
         "question": "How much does early check-in cost before the standard time?",
         "hint": "Should retrieve the early-arrival fee policy.",
     },
     {
-        "label": "Parking authorization",
+        "label": "🚗 Parking authorization",
         "question": "When is parking covered by the corporate sponsor?",
         "hint": "Tests routing to the parking_transport policy group.",
     },
     {
-        "label": "Abstention test (out of scope)",
+        "label": "🛡️ Abstention test (out of scope)",
         "question": "What is the company's stock price today?",
         "hint": "Should trigger the abstention pathway — not in source documents.",
     },
     {
-        "label": "Abstention test (procedural ambiguity)",
+        "label": "🛡️ Abstention test (procedural ambiguity)",
         "question": "What happens if I don't have a receipt for a meal?",
         "hint": "Edge case from the failure analysis — may abstain on low rerank score.",
     },
     {
-        "label": "Wi-Fi / internet",
+        "label": "📶 Wi-Fi / internet",
         "question": "Which Wi-Fi network should hotel guests connect to?",
         "hint": "Tests query rewriting (wifi → guest network).",
     },
@@ -152,7 +152,7 @@ def get_generation_kwargs() -> dict[str, Any]:
     """
     Resolve which LLM backend to use based on env vars.
     Returns kwargs to pass to answer_question; falls back to Ollama defaults
-    if nothing is set (matches your CLI behaviour).
+    if nothing is set.
     """
     backend = os.getenv("GEN_BACKEND", "ollama").lower()
 
@@ -170,7 +170,7 @@ def get_generation_kwargs() -> dict[str, Any]:
 
 
 # ---------------------------------------------------------------------------
-# Override helpers — abstention thresholds and LLM backend
+# Override helpers — make abstention thresholds adjustable via the UI without editing config.py
 # ---------------------------------------------------------------------------
 class _ConfigOverride:
     """Context manager to temporarily override config thresholds for one query."""
@@ -422,12 +422,36 @@ def render_examples_panel() -> str | None:
     return clicked
 
 
-def render_confidence_bar(confidence: float, kind: str, raw: float | None) -> None:
-    """Render a confidence bar with a label."""
+def render_confidence_bar(
+    confidence: float,
+    kind: str,
+    raw: float | None,
+    abstained: bool = False,
+    abstention_reason: str | None = None,
+) -> None:
+    """
+    Render a confidence bar with a label.
+
+    When abstained=True, the bar represents *retrieval* confidence only —
+    we have to distinguish it from *answer* confidence, which is effectively
+    zero (we refused to commit to an answer). The label changes accordingly.
+    """
     pct = int(round(confidence * 100))
     raw_str = f"{raw:.3f}" if raw is not None else "n/a"
     label_kind = "rerank score" if kind == "rerank" else "fused RRF score"
-    st.progress(confidence, text=f"Confidence ≈ {pct}%  ·  raw {label_kind}: {raw_str}")
+
+    if abstained:
+        # Distinguish retrieval confidence (we found chunks) from answer
+        # confidence (we refused to answer from them).
+        reason_suffix = f" — {abstention_reason}" if abstention_reason else ""
+        text = (
+            f"Retrieval confidence ≈ {pct}%  ·  raw {label_kind}: {raw_str}"
+            f"{reason_suffix}"
+        )
+    else:
+        text = f"Confidence ≈ {pct}%  ·  raw {label_kind}: {raw_str}"
+
+    st.progress(confidence, text=text)
 
 
 def render_chunk(chunk: dict[str, Any], idx: int) -> None:
@@ -450,6 +474,38 @@ def render_chunk(chunk: dict[str, Any], idx: int) -> None:
     st.divider()
 
 
+def _classify_abstention(
+    diagnostics: dict[str, Any],
+    profile_name: str,
+) -> str:
+    """
+    Determine which layer of AEGIS triggered the abstention.
+
+    Returns a short human-readable reason for display.
+
+    The two layers:
+    - Score-gating: top retrieval score below the configured threshold,
+      so we abstain BEFORE calling the LLM.
+    - LLM refusal: retrieval scores were above threshold, but the LLM
+      itself emitted SAFE_FALLBACK_ANSWER because the retrieved chunks
+      didn't actually answer the question.
+    """
+    thresholds = diagnostics.get("no_answer_thresholds", {})
+    if profile_name == "hybrid_rerank":
+        top = diagnostics.get("top_rerank_score")
+        thresh = thresholds.get("min_rerank_score")
+        if top is not None and thresh is not None and float(top) < float(thresh):
+            return f"score-gated (rerank {top:.2f} < {thresh:.2f})"
+    elif profile_name == "hybrid":
+        top = diagnostics.get("top_weighted_rrf_score")
+        thresh = thresholds.get("min_fused_score")
+        if top is not None and thresh is not None and float(top) < float(thresh):
+            return f"score-gated (RRF {top:.3f} < {thresh:.3f})"
+    # If we got here, the retrieval scores cleared the threshold but the
+    # LLM still returned the safe-fallback string.
+    return "LLM refused to answer from these chunks"
+
+
 def render_result(result: dict[str, Any]) -> None:
     """Render an answer result block."""
     abstained = result["abstained"]
@@ -457,19 +513,36 @@ def render_result(result: dict[str, Any]) -> None:
     diagnostics = result.get("retrieval_diagnostics", {})
     chunks = result.get("retrieved_chunks", [])
     latency_ms = result.get("latency_ms", 0.0)
+    profile_name = result.get("profile_name", "—")
+
+    abstention_reason = (
+        _classify_abstention(diagnostics, profile_name) if abstained else None
+    )
 
     if abstained:
         st.warning(f"🛡️ **Abstained** — {answer}")
+        # Surface the two-layer safety story explicitly so a viewer
+        # understands WHY we abstained, not just THAT we abstained.
+        st.caption(
+            f"**Why?** {abstention_reason}. "
+            "AEGIS has two safety layers: score-based gating (cheap, pre-LLM) "
+            "and LLM-side grounding (the model returns a canonical fallback "
+            "string when the retrieved context doesn't support an answer)."
+        )
     else:
         st.success(f"💬 **Answer:** {answer}")
 
     cols = st.columns(3)
     with cols[0]:
         render_confidence_bar(
-            result["confidence"], result["confidence_kind"], result["confidence_raw"]
+            result["confidence"],
+            result["confidence_kind"],
+            result["confidence_raw"],
+            abstained=abstained,
+            abstention_reason=abstention_reason,
         )
     with cols[1]:
-        st.metric("Profile", result.get("profile_name", "—"))
+        st.metric("Profile", profile_name)
     with cols[2]:
         st.metric("Latency", f"{latency_ms:.0f} ms")
 
