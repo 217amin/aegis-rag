@@ -12,6 +12,14 @@ license: mit
 
 # AEGIS-RAG — Production-Style RAG with Hybrid Retrieval, Reranking & Safe Abstention
 
+> Reliable Retrieval-Augmented Generation for policy documents — with hybrid retrieval, cross-encoder reranking, and **safe abstention** when evidence is weak.
+
+[![Live Demo](https://img.shields.io/badge/🤗%20Hugging%20Face-Live%20Demo-blue)](https://huggingface.co/spaces/aminlasri/aegis-rag)
+
+![AEGIS-RAG demo: confident answer, LLM refusal abstention, and score-gated abstention](docs/aegis-demo.gif)
+
+*Three question types in 30 seconds: a grounded answer, an LLM-refusal abstention on out-of-scope content, and a score-gated abstention triggered by adjusting the rerank threshold.*
+
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://python.org)
 [![LangChain](https://img.shields.io/badge/LangChain-RAG-green)](https://langchain.com)
 [![Status](https://img.shields.io/badge/Status-Complete-brightgreen)](https://github.com/217amin/aegis-rag)
