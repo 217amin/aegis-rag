@@ -17,7 +17,7 @@ Wiring:
 - Reloads when the user switches profile (different reranker requirements).
 
 Generation backend (LLM):
-- Default = Ollama: set GEN_BACKEND=ollama (or leave unset).
+- Default = Ollama : set GEN_BACKEND=ollama (or leave unset).
 - For Hugging Face Spaces / Cloud: set GEN_BACKEND=hf_inference and HF_TOKEN.
 - Or use any OpenAI-compatible endpoint: set GEN_BACKEND=openai_compat,
   OPENAI_BASE_URL, OPENAI_API_KEY, OPENAI_MODEL.
@@ -170,7 +170,7 @@ def get_generation_kwargs() -> dict[str, Any]:
 
 
 # ---------------------------------------------------------------------------
-# Override helpers — make abstention thresholds adjustable via the UI without editing config.py
+# Override helpers — make abstention threshold sliders work without editing config.py or restarting
 # ---------------------------------------------------------------------------
 class _ConfigOverride:
     """Context manager to temporarily override config thresholds for one query."""
@@ -534,23 +534,44 @@ def render_result(result: dict[str, Any]) -> None:
 
     cols = st.columns(3)
     with cols[0]:
-        render_confidence_bar(
-            result["confidence"],
-            result["confidence_kind"],
-            result["confidence_raw"],
-            abstained=abstained,
-            abstention_reason=abstention_reason,
-        )
+        if abstained:
+            # When abstained, an empty progress bar reads as "system failed".
+            # The opposite is true: the system is highly confident it should
+            # NOT answer. Replace the bar with a directional metric.
+            raw = result["confidence_raw"]
+            kind = result["confidence_kind"]
+            label = "Top rerank score" if kind == "rerank" else "Top fused RRF"
+            value_str = f"{raw:.3f}" if raw is not None else "n/a"
+            st.metric(label, value_str)
+            st.caption(
+                "Lower = stronger evidence that no chunk supports the question. "
+                "AEGIS is *confident* in its abstention."
+            )
+        else:
+            render_confidence_bar(
+                result["confidence"],
+                result["confidence_kind"],
+                result["confidence_raw"],
+                abstained=False,
+                abstention_reason=None,
+            )
     with cols[1]:
         st.metric("Profile", profile_name)
     with cols[2]:
         st.metric("Latency", f"{latency_ms:.0f} ms")
 
+    # Compare rewritten vs original case-insensitively. The retriever's
+    # _rewrite_query always lowercases its output, so a strict == check
+    # would surface a "rewritten" banner even when no hint matched.
     rewritten = diagnostics.get("rewritten_query")
+    original = diagnostics.get("original_query") or ""
     routed = diagnostics.get("routed_group")
-    if (rewritten and rewritten != diagnostics.get("original_query")) or routed:
+    rewrite_changed = bool(
+        rewritten and rewritten.strip().lower() != original.strip().lower()
+    )
+    if rewrite_changed or routed:
         info_bits = []
-        if rewritten and rewritten != diagnostics.get("original_query"):
+        if rewrite_changed:
             info_bits.append(f"**Rewritten query:** _{rewritten}_")
         if routed:
             info_bits.append(f"**Routed to group:** `{routed}`")
