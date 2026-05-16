@@ -1,0 +1,13 @@
+{
+  "created_at_utc": "2026-05-15T19:40:15.108864+00:00",
+  "embedding_model": "intfloat/e5-large-v2",
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "llm_model": "llama3.1:8b",
+  "chunking_method": "semantic",
+  "chunk_size": 900,
+  "chunk_overlap": 100,
+  "routing_enabled": true,
+  "query_rewrite_enabled": true,
+  "reranker_enabled": true,
+  "no_answer_gating_enabled": true
+}

@@ -1,133 +1,114 @@
 [
   {
-    "query": "What time is standard check-in?",
+    "query": "What is a large cash transaction under FINTRAC?",
     "relevant_chunk_ids": [
-      "01_Guest_Stay_and_Incidentals_Handbook_p1_c1",
-      "02_Hosted_Travel_and_Accommodation_Policy_p2_c1",
-      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p1_c1"
+      "01_FINTRAC_LCTR_Guidance_p3_c1",
+      "01_FINTRAC_LCTR_Guidance_p3_c2"
     ]
   },
   {
-    "query": "Can I check in at noon for free?",
+    "query": "How long do I have to submit a Large Cash Transaction Report after receiving the cash?",
     "relevant_chunk_ids": [
-      "01_Guest_Stay_and_Incidentals_Handbook_p1_c1",
-      "02_Hosted_Travel_and_Accommodation_Policy_p2_c1",
-      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p1_c1"
+      "01_FINTRAC_LCTR_Guidance_p4_c1"
     ]
   },
   {
-    "query": "How much is self-parking?",
+    "query": "What is the 24-hour rule for cash transactions?",
     "relevant_chunk_ids": [
-      "01_Guest_Stay_and_Incidentals_Handbook_p2_c1",
-      "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy_p1_c1"
+      "01_FINTRAC_LCTR_Guidance_p4_c1",
+      "02_FINTRAC_24hour_Rule_p3_c1",
+      "02_FINTRAC_24hour_Rule_p3_c2"
     ]
   },
   {
-    "query": "Is valet parking free for all guests?",
+    "query": "Which transaction types does the 24-hour rule apply to?",
     "relevant_chunk_ids": [
-      "01_Guest_Stay_and_Incidentals_Handbook_p2_c1",
-      "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy_p1_c1"
+      "02_FINTRAC_24hour_Rule_p3_c1"
     ]
   },
   {
-    "query": "What is the late checkout fee?",
+    "query": "How long must I keep a copy of a Large Cash Transaction Report?",
     "relevant_chunk_ids": [
-      "01_Guest_Stay_and_Incidentals_Handbook_p1_c1",
-      "02_Hosted_Travel_and_Accommodation_Policy_p2_c1",
-      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p1_c1"
+      "01_FINTRAC_LCTR_Guidance_p12_c2"
     ]
   },
   {
-    "query": "Can I stay after 2 PM without paying?",
+    "query": "Does cash include cheques or money orders for FINTRAC reporting purposes?",
     "relevant_chunk_ids": [
-      "01_Guest_Stay_and_Incidentals_Handbook_p1_c1"
+      "01_FINTRAC_LCTR_Guidance_p3_c1"
     ]
   },
   {
-    "query": "Are pets allowed and what is the fee?",
-    "relevant_chunk_ids": []
-  },
-  {
-    "query": "Do service animals pay a fee?",
+    "query": "Can I delegate my FINTRAC reporting responsibility to a service provider?",
     "relevant_chunk_ids": [
-      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p1_c1",
-      "05_Guest_Safety,_Accessibility,_and_Reasonable_Comfort_Standard_p1_c1"
+      "01_FINTRAC_LCTR_Guidance_p2_c2",
+      "01_FINTRAC_LCTR_Guidance_p3_c1"
     ]
   },
   {
-    "query": "What are quiet hours?",
+    "query": "When do I need to file a Suspicious Transaction Report?",
     "relevant_chunk_ids": [
-      "01_Guest_Stay_and_Incidentals_Handbook_p1_c2"
+      "01_FINTRAC_LCTR_Guidance_p12_c1"
     ]
   },
   {
-    "query": "Is smoking allowed on balconies?",
+    "query": "If a large cash transaction involves a reportable electronic funds transfer, what must I submit?",
     "relevant_chunk_ids": [
-      "01_Guest_Stay_and_Incidentals_Handbook_p1_c2",
-      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p2_c1"
+      "01_FINTRAC_LCTR_Guidance_p12_c2",
+      "03_FINTRAC_EFT_Reporting_p1_c1"
     ]
   },
   {
-    "query": "What internet network should I use?",
+    "query": "What does OSFI Guideline E-21 cover?",
     "relevant_chunk_ids": [
-      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p2_c1"
+      "04_OSFI_E21_Operational_Risk_p2_c2",
+      "04_OSFI_E21_Operational_Risk_p3_c1"
     ]
   },
   {
-    "query": "Is parking always covered for corporate accounts?",
+    "query": "What is 'tolerance for disruption' under OSFI E-21?",
     "relevant_chunk_ids": [
-      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p1_c1",
-      "01_Guest_Stay_and_Incidentals_Handbook_p2_c1",
-      "02_Hosted_Travel_and_Accommodation_Policy_p1_c2"
+      "04_OSFI_E21_Operational_Risk_p4_c3"
     ]
   },
   {
-    "query": "What happens if I don’t have a receipt?",
+    "query": "What is operational resilience according to OSFI?",
     "relevant_chunk_ids": [
-      "04_Receipts,_Reimbursements,_and_Supporting_Documentation_Standard_p2_c1"
+      "04_OSFI_E21_Operational_Risk_p2_c2",
+      "04_OSFI_E21_Operational_Risk_p3_c1"
     ]
   },
   {
-    "query": "Can I expense valet parking?",
+    "query": "What does a crisis management team do under E-21?",
     "relevant_chunk_ids": [
-      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p2_c1",
-      "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy_p1_c1"
+      "04_OSFI_E21_Operational_Risk_p4_c2"
     ]
   },
   {
-    "query": "What is the garage height limit?",
+    "query": "What is the scope of OSFI Guideline B-13?",
     "relevant_chunk_ids": [
-      "01_Guest_Stay_and_Incidentals_Handbook_p2_c1",
-      "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy_p1_c1",
-      "08_Corporate_Stay_FAQ_for_Sponsored_Guests_p2_c1"
+      "05_OSFI_B13_Cyber_Risk_p3_c1",
+      "05_OSFI_B13_Cyber_Risk_p4_c1"
     ]
   },
   {
-    "query": "How much is thermal circuit day access at the spa?",
+    "query": "What are the cyber-security capabilities outlined in B-13?",
     "relevant_chunk_ids": [
-      "01_Guest_Stay_and_Incidentals_Handbook_p2_c1"
+      "05_OSFI_B13_Cyber_Risk_p2_c1",
+      "05_OSFI_B13_Cyber_Risk_p4_c1"
     ]
   },
   {
-    "query": "What is the benchmark rate for personal vehicle mileage reimbursement?",
+    "query": "What does 'criticality' mean for third-party arrangements under B-10?",
     "relevant_chunk_ids": [
-      "03_Ground_Transportation,_Parking,_and_Personal_Vehicle_Policy_p2_c1"
+      "06_OSFI_Third_Party_Risk_p4_c1",
+      "06_OSFI_Third_Party_Risk_p5_c1"
     ]
   },
   {
-    "query": "What are the service fees for private food-and-beverage events?",
+    "query": "What is required of third parties regarding incident management under B-10?",
     "relevant_chunk_ids": [
-      "06_Conference,_Hosted_Dining,_and_Event_Billing_Policy_p1_c1"
+      "06_OSFI_Third_Party_Risk_p22_c1"
     ]
-  },
-  {
-    "query": "Should accessible room requests be prioritized over aesthetic preferences?",
-    "relevant_chunk_ids": [
-      "05_Guest_Safety,_Accessibility,_and_Reasonable_Comfort_Standard_p1_c1"
-    ]
-  },
-  {
-    "query": "Does the hotel have a swimming pool?",
-    "relevant_chunk_ids": []
   }
 ]

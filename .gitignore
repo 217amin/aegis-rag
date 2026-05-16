@@ -1,43 +1,24 @@
-# Python
+# Python caches
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.so
-*.egg-info/
-.eggs/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.ipynb_checkpoints/
+*$py.class
+
+# Virtual environments
 .venv/
 venv/
 env/
-ENV/
 
-# Local environment
-.env
-.env.*
-
-# OS / editor
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Data artifacts
-data/texts/*.jsonl
+# Data and Models
 data/embeddings/
 data/eval/results_*.json
 data/eval/results_*.csv
 data/eval/plots/
-data/eval/reports/
-data/eval/experiment_manifest.json
+models/
 
-# Large or local models
-models/results*/
-models/*.bin
-models/*.gguf
+# Application specific
+.streamlit/secrets.toml
 
-# Notebook outputs
-*.nbconvert.ipynb
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store

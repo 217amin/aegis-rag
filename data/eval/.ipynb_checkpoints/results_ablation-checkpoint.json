@@ -1,0 +1,3674 @@
+[
+  {
+    "profile_name": "bm25_only",
+    "aggregate": {
+      "recall@5": 0.5833333333333334,
+      "recall@10": 0.625,
+      "ndcg@5": 0.5010597552042144,
+      "mrr": 0.5224999999999999,
+      "qps": 823.8012661825815,
+      "avg_latency_sec": 0.001213884999999948
+    },
+    "per_query": [
+      {
+        "query": "What is a large cash transaction under FINTRAC?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "01_FINTRAC_LCTR_Guidance_p30_c1",
+          "03_FINTRAC_EFT_Reporting_p27_c2",
+          "01_FINTRAC_LCTR_Guidance_p12_c1",
+          "01_FINTRAC_LCTR_Guidance_p14_c1",
+          "01_FINTRAC_LCTR_Guidance_p1_c2",
+          "01_FINTRAC_LCTR_Guidance_p13_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "What is a large cash transaction under FINTRAC?",
+          "rewritten_query": "what is a large cash transaction under fintrac?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p1_c1",
+            "01_FINTRAC_LCTR_Guidance_p3_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "01_FINTRAC_LCTR_Guidance_p30_c1",
+            "03_FINTRAC_EFT_Reporting_p27_c2",
+            "01_FINTRAC_LCTR_Guidance_p12_c1",
+            "01_FINTRAC_LCTR_Guidance_p14_c1",
+            "01_FINTRAC_LCTR_Guidance_p1_c2",
+            "01_FINTRAC_LCTR_Guidance_p13_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "How long do I have to submit a Large Cash Transaction Report after receiving the cash?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 0.5,
+        "mrr": 0.3333333333333333,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p5_c1",
+          "01_FINTRAC_LCTR_Guidance_p1_c2",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "01_FINTRAC_LCTR_Guidance_p15_c2",
+          "03_FINTRAC_EFT_Reporting_p27_c2",
+          "01_FINTRAC_LCTR_Guidance_p12_c1",
+          "01_FINTRAC_LCTR_Guidance_p14_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p4_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "How long do I have to submit a Large Cash Transaction Report after receiving the cash?",
+          "rewritten_query": "how long do i have to submit a large cash transaction report after receiving the cash?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p5_c1",
+            "01_FINTRAC_LCTR_Guidance_p1_c2",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "01_FINTRAC_LCTR_Guidance_p1_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "01_FINTRAC_LCTR_Guidance_p15_c2",
+            "03_FINTRAC_EFT_Reporting_p27_c2",
+            "01_FINTRAC_LCTR_Guidance_p12_c1",
+            "01_FINTRAC_LCTR_Guidance_p14_c1",
+            "01_FINTRAC_LCTR_Guidance_p3_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is the 24-hour rule for cash transactions?",
+        "recall@5": 0.3333333333333333,
+        "recall@10": 0.6666666666666666,
+        "ndcg@5": 0.23463936301137822,
+        "mrr": 0.3333333333333333,
+        "retrieved_ids": [
+          "02_FINTRAC_24hour_Rule_p14_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "02_FINTRAC_24hour_Rule_p3_c1",
+          "02_FINTRAC_24hour_Rule_p14_c2",
+          "02_FINTRAC_24hour_Rule_p2_c1",
+          "02_FINTRAC_24hour_Rule_p30_c1",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "02_FINTRAC_24hour_Rule_p4_c1",
+          "02_FINTRAC_24hour_Rule_p1_c1",
+          "01_FINTRAC_LCTR_Guidance_p71_c2"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "02_FINTRAC_24hour_Rule_p3_c1",
+          "02_FINTRAC_24hour_Rule_p3_c2"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "What is the 24-hour rule for cash transactions?",
+          "rewritten_query": "what is the 24-hour rule for cash transactions?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "02_FINTRAC_24hour_Rule_p14_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "02_FINTRAC_24hour_Rule_p3_c1",
+            "02_FINTRAC_24hour_Rule_p14_c2",
+            "02_FINTRAC_24hour_Rule_p2_c1",
+            "02_FINTRAC_24hour_Rule_p30_c1",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "02_FINTRAC_24hour_Rule_p4_c1",
+            "02_FINTRAC_24hour_Rule_p1_c1",
+            "01_FINTRAC_LCTR_Guidance_p71_c2"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "Which transaction types does the 24-hour rule apply to?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "02_FINTRAC_24hour_Rule_p3_c1",
+          "02_FINTRAC_24hour_Rule_p6_c1",
+          "02_FINTRAC_24hour_Rule_p7_c2",
+          "02_FINTRAC_24hour_Rule_p1_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "02_FINTRAC_24hour_Rule_p23_c2",
+          "02_FINTRAC_24hour_Rule_p8_c2",
+          "02_FINTRAC_24hour_Rule_p20_c1",
+          "02_FINTRAC_24hour_Rule_p2_c1",
+          "02_FINTRAC_24hour_Rule_p49_c2"
+        ],
+        "relevant_ids": [
+          "02_FINTRAC_24hour_Rule_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "Which transaction types does the 24-hour rule apply to?",
+          "rewritten_query": "which transaction types does the 24-hour rule apply to?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "02_FINTRAC_24hour_Rule_p3_c1",
+            "02_FINTRAC_24hour_Rule_p6_c1",
+            "02_FINTRAC_24hour_Rule_p7_c2",
+            "02_FINTRAC_24hour_Rule_p1_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "02_FINTRAC_24hour_Rule_p23_c2",
+            "02_FINTRAC_24hour_Rule_p8_c2",
+            "02_FINTRAC_24hour_Rule_p20_c1",
+            "02_FINTRAC_24hour_Rule_p2_c1",
+            "02_FINTRAC_24hour_Rule_p49_c2"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "How long must I keep a copy of a Large Cash Transaction Report?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "03_FINTRAC_EFT_Reporting_p28_c1",
+          "01_FINTRAC_LCTR_Guidance_p15_c2",
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1",
+          "03_FINTRAC_EFT_Reporting_p27_c2",
+          "01_FINTRAC_LCTR_Guidance_p1_c2",
+          "01_FINTRAC_LCTR_Guidance_p2_c1",
+          "01_FINTRAC_LCTR_Guidance_p14_c1",
+          "01_FINTRAC_LCTR_Guidance_p31_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "How long must I keep a copy of a Large Cash Transaction Report?",
+          "rewritten_query": "how long must i keep a copy of a large cash transaction report?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "03_FINTRAC_EFT_Reporting_p28_c1",
+            "01_FINTRAC_LCTR_Guidance_p15_c2",
+            "01_FINTRAC_LCTR_Guidance_p1_c1",
+            "01_FINTRAC_LCTR_Guidance_p3_c1",
+            "03_FINTRAC_EFT_Reporting_p27_c2",
+            "01_FINTRAC_LCTR_Guidance_p1_c2",
+            "01_FINTRAC_LCTR_Guidance_p2_c1",
+            "01_FINTRAC_LCTR_Guidance_p14_c1",
+            "01_FINTRAC_LCTR_Guidance_p31_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "Does cash include cheques or money orders for FINTRAC reporting purposes?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p3_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c1",
+          "01_FINTRAC_LCTR_Guidance_p6_c1",
+          "01_FINTRAC_LCTR_Guidance_p102_c1",
+          "01_FINTRAC_LCTR_Guidance_p103_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "03_FINTRAC_EFT_Reporting_p26_c1",
+          "01_FINTRAC_LCTR_Guidance_p33_c1",
+          "01_FINTRAC_LCTR_Guidance_p95_c1",
+          "01_FINTRAC_LCTR_Guidance_p36_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "Does cash include cheques or money orders for FINTRAC reporting purposes?",
+          "rewritten_query": "does cash include cheques or money orders for fintrac reporting purposes?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p3_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c1",
+            "01_FINTRAC_LCTR_Guidance_p6_c1",
+            "01_FINTRAC_LCTR_Guidance_p102_c1",
+            "01_FINTRAC_LCTR_Guidance_p103_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "03_FINTRAC_EFT_Reporting_p26_c1",
+            "01_FINTRAC_LCTR_Guidance_p33_c1",
+            "01_FINTRAC_LCTR_Guidance_p95_c1",
+            "01_FINTRAC_LCTR_Guidance_p36_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "Can I delegate my FINTRAC reporting responsibility to a service provider?",
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "ndcg@5": 0.3065735963827292,
+        "mrr": 0.3333333333333333,
+        "retrieved_ids": [
+          "03_FINTRAC_EFT_Reporting_p3_c2",
+          "01_FINTRAC_LCTR_Guidance_p80_c2",
+          "01_FINTRAC_LCTR_Guidance_p3_c1",
+          "01_FINTRAC_LCTR_Guidance_p2_c2",
+          "01_FINTRAC_LCTR_Guidance_p102_c1",
+          "01_FINTRAC_LCTR_Guidance_p73_c1",
+          "01_FINTRAC_LCTR_Guidance_p74_c1",
+          "01_FINTRAC_LCTR_Guidance_p88_c1",
+          "06_OSFI_Third_Party_Risk_p29_c2",
+          "06_OSFI_Third_Party_Risk_p10_c2"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p2_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "Can I delegate my FINTRAC reporting responsibility to a service provider?",
+          "rewritten_query": "can i delegate my fintrac reporting responsibility to a service provider?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "03_FINTRAC_EFT_Reporting_p3_c2",
+            "01_FINTRAC_LCTR_Guidance_p80_c2",
+            "01_FINTRAC_LCTR_Guidance_p3_c1",
+            "01_FINTRAC_LCTR_Guidance_p2_c2",
+            "01_FINTRAC_LCTR_Guidance_p102_c1",
+            "01_FINTRAC_LCTR_Guidance_p73_c1",
+            "01_FINTRAC_LCTR_Guidance_p74_c1",
+            "01_FINTRAC_LCTR_Guidance_p88_c1",
+            "06_OSFI_Third_Party_Risk_p29_c2",
+            "06_OSFI_Third_Party_Risk_p10_c2"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "When do I need to file a Suspicious Transaction Report?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c1",
+          "02_FINTRAC_24hour_Rule_p6_c2",
+          "02_FINTRAC_24hour_Rule_p10_c1",
+          "03_FINTRAC_EFT_Reporting_p26_c2",
+          "03_FINTRAC_EFT_Reporting_p11_c2",
+          "03_FINTRAC_EFT_Reporting_p9_c2",
+          "03_FINTRAC_EFT_Reporting_p10_c1",
+          "03_FINTRAC_EFT_Reporting_p27_c1",
+          "03_FINTRAC_EFT_Reporting_p93_c2",
+          "05_OSFI_B13_Cyber_Risk_p19_c2"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "When do I need to file a Suspicious Transaction Report?",
+          "rewritten_query": "when do i need to file a suspicious transaction report?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p12_c1",
+            "02_FINTRAC_24hour_Rule_p6_c2",
+            "02_FINTRAC_24hour_Rule_p10_c1",
+            "03_FINTRAC_EFT_Reporting_p26_c2",
+            "03_FINTRAC_EFT_Reporting_p11_c2",
+            "03_FINTRAC_EFT_Reporting_p9_c2",
+            "03_FINTRAC_EFT_Reporting_p10_c1",
+            "03_FINTRAC_EFT_Reporting_p27_c1",
+            "03_FINTRAC_EFT_Reporting_p93_c2",
+            "05_OSFI_B13_Cyber_Risk_p19_c2"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "If a large cash transaction involves a reportable electronic funds transfer, what must I submit?",
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "ndcg@5": 0.6131471927654584,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "03_FINTRAC_EFT_Reporting_p27_c2",
+          "01_FINTRAC_LCTR_Guidance_p3_c1",
+          "03_FINTRAC_EFT_Reporting_p7_c2",
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "01_FINTRAC_LCTR_Guidance_p15_c1",
+          "03_FINTRAC_EFT_Reporting_p10_c2",
+          "01_FINTRAC_LCTR_Guidance_p12_c1",
+          "01_FINTRAC_LCTR_Guidance_p5_c1",
+          "01_FINTRAC_LCTR_Guidance_p4_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "03_FINTRAC_EFT_Reporting_p1_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "If a large cash transaction involves a reportable electronic funds transfer, what must I submit?",
+          "rewritten_query": "if a large cash transaction involves a reportable electronic funds transfer, what must i submit?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "03_FINTRAC_EFT_Reporting_p27_c2",
+            "01_FINTRAC_LCTR_Guidance_p3_c1",
+            "03_FINTRAC_EFT_Reporting_p7_c2",
+            "01_FINTRAC_LCTR_Guidance_p1_c1",
+            "01_FINTRAC_LCTR_Guidance_p15_c1",
+            "03_FINTRAC_EFT_Reporting_p10_c2",
+            "01_FINTRAC_LCTR_Guidance_p12_c1",
+            "01_FINTRAC_LCTR_Guidance_p5_c1",
+            "01_FINTRAC_LCTR_Guidance_p4_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What does OSFI Guideline E-21 cover?",
+        "recall@5": 0.3333333333333333,
+        "recall@10": 0.3333333333333333,
+        "ndcg@5": 0.23463936301137822,
+        "mrr": 0.3333333333333333,
+        "retrieved_ids": [
+          "05_OSFI_B13_Cyber_Risk_p4_c2",
+          "06_OSFI_Third_Party_Risk_p7_c2",
+          "04_OSFI_E21_Operational_Risk_p1_c1",
+          "05_OSFI_B13_Cyber_Risk_p3_c2",
+          "04_OSFI_E21_Operational_Risk_p8_c1",
+          "06_OSFI_Third_Party_Risk_p15_c3",
+          "06_OSFI_Third_Party_Risk_p15_c2",
+          "06_OSFI_Third_Party_Risk_p6_c2",
+          "06_OSFI_Third_Party_Risk_p23_c2",
+          "06_OSFI_Third_Party_Risk_p6_c1"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p1_c1",
+          "04_OSFI_E21_Operational_Risk_p2_c1",
+          "04_OSFI_E21_Operational_Risk_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "What does OSFI Guideline E-21 cover?",
+          "rewritten_query": "what does osfi guideline e-21 cover?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "05_OSFI_B13_Cyber_Risk_p4_c2",
+            "06_OSFI_Third_Party_Risk_p7_c2",
+            "04_OSFI_E21_Operational_Risk_p1_c1",
+            "05_OSFI_B13_Cyber_Risk_p3_c2",
+            "04_OSFI_E21_Operational_Risk_p8_c1",
+            "06_OSFI_Third_Party_Risk_p15_c3",
+            "06_OSFI_Third_Party_Risk_p15_c2",
+            "06_OSFI_Third_Party_Risk_p6_c2",
+            "06_OSFI_Third_Party_Risk_p23_c2",
+            "06_OSFI_Third_Party_Risk_p6_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is 'tolerance for disruption' under OSFI E-21?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 0.6309297535714575,
+        "mrr": 0.5,
+        "retrieved_ids": [
+          "05_OSFI_B13_Cyber_Risk_p4_c2",
+          "04_OSFI_E21_Operational_Risk_p4_c3",
+          "04_OSFI_E21_Operational_Risk_p4_c2",
+          "04_OSFI_E21_Operational_Risk_p13_c1",
+          "04_OSFI_E21_Operational_Risk_p13_c2",
+          "06_OSFI_Third_Party_Risk_p7_c2",
+          "05_OSFI_B13_Cyber_Risk_p3_c2",
+          "05_OSFI_B13_Cyber_Risk_p7_c1",
+          "06_OSFI_Third_Party_Risk_p6_c2",
+          "05_OSFI_B13_Cyber_Risk_p14_c1"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c3"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "What is 'tolerance for disruption' under OSFI E-21?",
+          "rewritten_query": "what is 'tolerance for disruption' under osfi e-21?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "05_OSFI_B13_Cyber_Risk_p4_c2",
+            "04_OSFI_E21_Operational_Risk_p4_c3",
+            "04_OSFI_E21_Operational_Risk_p4_c2",
+            "04_OSFI_E21_Operational_Risk_p13_c1",
+            "04_OSFI_E21_Operational_Risk_p13_c2",
+            "06_OSFI_Third_Party_Risk_p7_c2",
+            "05_OSFI_B13_Cyber_Risk_p3_c2",
+            "05_OSFI_B13_Cyber_Risk_p7_c1",
+            "06_OSFI_Third_Party_Risk_p6_c2",
+            "05_OSFI_B13_Cyber_Risk_p14_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is operational resilience according to OSFI?",
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "ndcg@5": 0.23719771276929622,
+        "mrr": 0.2,
+        "retrieved_ids": [
+          "04_OSFI_E21_Operational_Risk_p10_c2",
+          "04_OSFI_E21_Operational_Risk_p5_c1",
+          "04_OSFI_E21_Operational_Risk_p19_c2",
+          "04_OSFI_E21_Operational_Risk_p6_c2",
+          "04_OSFI_E21_Operational_Risk_p3_c1",
+          "06_OSFI_Third_Party_Risk_p2_c2",
+          "04_OSFI_E21_Operational_Risk_p12_c1",
+          "04_OSFI_E21_Operational_Risk_p15_c1",
+          "06_OSFI_Third_Party_Risk_p5_c1",
+          "04_OSFI_E21_Operational_Risk_p4_c1"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p2_c2",
+          "04_OSFI_E21_Operational_Risk_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "What is operational resilience according to OSFI?",
+          "rewritten_query": "what is operational resilience according to osfi?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "04_OSFI_E21_Operational_Risk_p10_c2",
+            "04_OSFI_E21_Operational_Risk_p5_c1",
+            "04_OSFI_E21_Operational_Risk_p19_c2",
+            "04_OSFI_E21_Operational_Risk_p6_c2",
+            "04_OSFI_E21_Operational_Risk_p3_c1",
+            "06_OSFI_Third_Party_Risk_p2_c2",
+            "04_OSFI_E21_Operational_Risk_p12_c1",
+            "04_OSFI_E21_Operational_Risk_p15_c1",
+            "06_OSFI_Third_Party_Risk_p5_c1",
+            "04_OSFI_E21_Operational_Risk_p4_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What does a crisis management team do under E-21?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c2",
+          "04_OSFI_E21_Operational_Risk_p18_c1",
+          "04_OSFI_E21_Operational_Risk_p1_c1",
+          "05_OSFI_B13_Cyber_Risk_p4_c2",
+          "04_OSFI_E21_Operational_Risk_p4_c1",
+          "06_OSFI_Third_Party_Risk_p7_c2",
+          "05_OSFI_B13_Cyber_Risk_p5_c3",
+          "05_OSFI_B13_Cyber_Risk_p23_c1",
+          "04_OSFI_E21_Operational_Risk_p2_c1",
+          "04_OSFI_E21_Operational_Risk_p15_c1"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c2"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "What does a crisis management team do under E-21?",
+          "rewritten_query": "what does a crisis management team do under e-21?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "04_OSFI_E21_Operational_Risk_p4_c2",
+            "04_OSFI_E21_Operational_Risk_p18_c1",
+            "04_OSFI_E21_Operational_Risk_p1_c1",
+            "05_OSFI_B13_Cyber_Risk_p4_c2",
+            "04_OSFI_E21_Operational_Risk_p4_c1",
+            "06_OSFI_Third_Party_Risk_p7_c2",
+            "05_OSFI_B13_Cyber_Risk_p5_c3",
+            "05_OSFI_B13_Cyber_Risk_p23_c1",
+            "04_OSFI_E21_Operational_Risk_p2_c1",
+            "04_OSFI_E21_Operational_Risk_p15_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is the scope of OSFI Guideline B-13?",
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "ndcg@5": 0.0,
+        "mrr": 0.16666666666666666,
+        "retrieved_ids": [
+          "04_OSFI_E21_Operational_Risk_p21_c1",
+          "06_OSFI_Third_Party_Risk_p25_c3",
+          "06_OSFI_Third_Party_Risk_p4_c1",
+          "06_OSFI_Third_Party_Risk_p7_c2",
+          "05_OSFI_B13_Cyber_Risk_p4_c2",
+          "05_OSFI_B13_Cyber_Risk_p1_c1",
+          "06_OSFI_Third_Party_Risk_p27_c1",
+          "06_OSFI_Third_Party_Risk_p1_c1",
+          "04_OSFI_E21_Operational_Risk_p19_c2",
+          "04_OSFI_E21_Operational_Risk_p17_c2"
+        ],
+        "relevant_ids": [
+          "05_OSFI_B13_Cyber_Risk_p1_c1",
+          "05_OSFI_B13_Cyber_Risk_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "What is the scope of OSFI Guideline B-13?",
+          "rewritten_query": "what is the scope of osfi guideline b-13?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "04_OSFI_E21_Operational_Risk_p21_c1",
+            "06_OSFI_Third_Party_Risk_p25_c3",
+            "06_OSFI_Third_Party_Risk_p4_c1",
+            "06_OSFI_Third_Party_Risk_p7_c2",
+            "05_OSFI_B13_Cyber_Risk_p4_c2",
+            "05_OSFI_B13_Cyber_Risk_p1_c1",
+            "06_OSFI_Third_Party_Risk_p27_c1",
+            "06_OSFI_Third_Party_Risk_p1_c1",
+            "04_OSFI_E21_Operational_Risk_p19_c2",
+            "04_OSFI_E21_Operational_Risk_p17_c2"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What are the three cyber-security capabilities outlined in B-13?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "05_OSFI_B13_Cyber_Risk_p23_c1",
+          "05_OSFI_B13_Cyber_Risk_p22_c2",
+          "06_OSFI_Third_Party_Risk_p27_c1",
+          "05_OSFI_B13_Cyber_Risk_p22_c1",
+          "05_OSFI_B13_Cyber_Risk_p4_c2",
+          "05_OSFI_B13_Cyber_Risk_p3_c2",
+          "05_OSFI_B13_Cyber_Risk_p17_c2",
+          "06_OSFI_Third_Party_Risk_p25_c3",
+          "05_OSFI_B13_Cyber_Risk_p19_c3",
+          "05_OSFI_B13_Cyber_Risk_p16_c1"
+        ],
+        "relevant_ids": [
+          "05_OSFI_B13_Cyber_Risk_p2_c1",
+          "05_OSFI_B13_Cyber_Risk_p4_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "What are the three cyber-security capabilities outlined in B-13?",
+          "rewritten_query": "what are the three cyber-security capabilities outlined in b-13?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "05_OSFI_B13_Cyber_Risk_p23_c1",
+            "05_OSFI_B13_Cyber_Risk_p22_c2",
+            "06_OSFI_Third_Party_Risk_p27_c1",
+            "05_OSFI_B13_Cyber_Risk_p22_c1",
+            "05_OSFI_B13_Cyber_Risk_p4_c2",
+            "05_OSFI_B13_Cyber_Risk_p3_c2",
+            "05_OSFI_B13_Cyber_Risk_p17_c2",
+            "06_OSFI_Third_Party_Risk_p25_c3",
+            "05_OSFI_B13_Cyber_Risk_p19_c3",
+            "05_OSFI_B13_Cyber_Risk_p16_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is the criticality assessment for third-party arrangements under B-10?",
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "ndcg@5": 0.2640681225725909,
+        "mrr": 0.25,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p12_c1",
+          "06_OSFI_Third_Party_Risk_p10_c1",
+          "06_OSFI_Third_Party_Risk_p9_c2",
+          "06_OSFI_Third_Party_Risk_p4_c1",
+          "06_OSFI_Third_Party_Risk_p11_c2",
+          "06_OSFI_Third_Party_Risk_p3_c3",
+          "06_OSFI_Third_Party_Risk_p10_c2",
+          "04_OSFI_E21_Operational_Risk_p19_c2",
+          "06_OSFI_Third_Party_Risk_p12_c2",
+          "06_OSFI_Third_Party_Risk_p13_c1"
+        ],
+        "relevant_ids": [
+          "06_OSFI_Third_Party_Risk_p4_c1",
+          "06_OSFI_Third_Party_Risk_p5_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "What is the criticality assessment for third-party arrangements under B-10?",
+          "rewritten_query": "what is the criticality assessment for third-party arrangements under b-10?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p12_c1",
+            "06_OSFI_Third_Party_Risk_p10_c1",
+            "06_OSFI_Third_Party_Risk_p9_c2",
+            "06_OSFI_Third_Party_Risk_p4_c1",
+            "06_OSFI_Third_Party_Risk_p11_c2",
+            "06_OSFI_Third_Party_Risk_p3_c3",
+            "06_OSFI_Third_Party_Risk_p10_c2",
+            "04_OSFI_E21_Operational_Risk_p19_c2",
+            "06_OSFI_Third_Party_Risk_p12_c2",
+            "06_OSFI_Third_Party_Risk_p13_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is required of third parties regarding incident management under B-10?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p22_c1",
+          "05_OSFI_B13_Cyber_Risk_p13_c2",
+          "05_OSFI_B13_Cyber_Risk_p12_c2",
+          "05_OSFI_B13_Cyber_Risk_p13_c1",
+          "04_OSFI_E21_Operational_Risk_p19_c2",
+          "06_OSFI_Third_Party_Risk_p11_c1",
+          "06_OSFI_Third_Party_Risk_p1_c1",
+          "05_OSFI_B13_Cyber_Risk_p4_c2",
+          "06_OSFI_Third_Party_Risk_p3_c1",
+          "04_OSFI_E21_Operational_Risk_p17_c2"
+        ],
+        "relevant_ids": [
+          "06_OSFI_Third_Party_Risk_p22_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "What is required of third parties regarding incident management under B-10?",
+          "rewritten_query": "what is required of third parties regarding incident management under b-10?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p22_c1",
+            "05_OSFI_B13_Cyber_Risk_p13_c2",
+            "05_OSFI_B13_Cyber_Risk_p12_c2",
+            "05_OSFI_B13_Cyber_Risk_p13_c1",
+            "04_OSFI_E21_Operational_Risk_p19_c2",
+            "06_OSFI_Third_Party_Risk_p11_c1",
+            "06_OSFI_Third_Party_Risk_p1_c1",
+            "05_OSFI_B13_Cyber_Risk_p4_c2",
+            "06_OSFI_Third_Party_Risk_p3_c1",
+            "04_OSFI_E21_Operational_Risk_p17_c2"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What time is standard hotel check-in?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "02_FINTRAC_24hour_Rule_p28_c1",
+          "02_FINTRAC_24hour_Rule_p27_c1",
+          "02_FINTRAC_24hour_Rule_p28_c2",
+          "02_FINTRAC_24hour_Rule_p26_c1",
+          "03_FINTRAC_EFT_Reporting_p37_c1",
+          "01_FINTRAC_LCTR_Guidance_p21_c1",
+          "05_OSFI_B13_Cyber_Risk_p11_c2",
+          "03_FINTRAC_EFT_Reporting_p53_c2",
+          "05_OSFI_B13_Cyber_Risk_p24_c1",
+          "01_FINTRAC_LCTR_Guidance_p28_c2"
+        ],
+        "relevant_ids": [],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "What time is standard hotel check-in?",
+          "rewritten_query": "what time is standard hotel check-in?",
+          "routed_group": "guest_stay",
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "02_FINTRAC_24hour_Rule_p28_c1",
+            "02_FINTRAC_24hour_Rule_p27_c1",
+            "02_FINTRAC_24hour_Rule_p28_c2",
+            "02_FINTRAC_24hour_Rule_p26_c1",
+            "03_FINTRAC_EFT_Reporting_p37_c1",
+            "01_FINTRAC_LCTR_Guidance_p21_c1",
+            "05_OSFI_B13_Cyber_Risk_p11_c2",
+            "03_FINTRAC_EFT_Reporting_p53_c2",
+            "05_OSFI_B13_Cyber_Risk_p24_c1",
+            "01_FINTRAC_LCTR_Guidance_p28_c2"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "How much is self-parking at the hotel?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p85_c1",
+          "01_FINTRAC_LCTR_Guidance_p55_c2",
+          "01_FINTRAC_LCTR_Guidance_p66_c2",
+          "03_FINTRAC_EFT_Reporting_p115_c2",
+          "03_FINTRAC_EFT_Reporting_p57_c2",
+          "03_FINTRAC_EFT_Reporting_p29_c1",
+          "01_FINTRAC_LCTR_Guidance_p22_c1",
+          "03_FINTRAC_EFT_Reporting_p38_c1",
+          "06_OSFI_Third_Party_Risk_p29_c1",
+          "01_FINTRAC_LCTR_Guidance_p14_c1"
+        ],
+        "relevant_ids": [],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "How much is self-parking at the hotel?",
+          "rewritten_query": "how much is self-parking at the hotel?",
+          "routed_group": "parking_transport",
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p85_c1",
+            "01_FINTRAC_LCTR_Guidance_p55_c2",
+            "01_FINTRAC_LCTR_Guidance_p66_c2",
+            "03_FINTRAC_EFT_Reporting_p115_c2",
+            "03_FINTRAC_EFT_Reporting_p57_c2",
+            "03_FINTRAC_EFT_Reporting_p29_c1",
+            "01_FINTRAC_LCTR_Guidance_p22_c1",
+            "03_FINTRAC_EFT_Reporting_p38_c1",
+            "06_OSFI_Third_Party_Risk_p29_c1",
+            "01_FINTRAC_LCTR_Guidance_p14_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What are the EU GDPR penalty caps for data breaches?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "04_OSFI_E21_Operational_Risk_p20_c2",
+          "06_OSFI_Third_Party_Risk_p6_c3",
+          "04_OSFI_E21_Operational_Risk_p10_c2",
+          "03_FINTRAC_EFT_Reporting_p112_c1",
+          "06_OSFI_Third_Party_Risk_p16_c2",
+          "05_OSFI_B13_Cyber_Risk_p19_c3",
+          "06_OSFI_Third_Party_Risk_p16_c1",
+          "06_OSFI_Third_Party_Risk_p30_c1",
+          "04_OSFI_E21_Operational_Risk_p20_c1",
+          "03_FINTRAC_EFT_Reporting_p55_c1"
+        ],
+        "relevant_ids": [],
+        "retrieval_diagnostics": {
+          "profile_name": "bm25_only",
+          "original_query": "What are the EU GDPR penalty caps for data breaches?",
+          "rewritten_query": "what are the eu gdpr penalty caps for data breaches?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 0,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "04_OSFI_E21_Operational_Risk_p20_c2",
+            "06_OSFI_Third_Party_Risk_p6_c3",
+            "04_OSFI_E21_Operational_Risk_p10_c2",
+            "03_FINTRAC_EFT_Reporting_p112_c1",
+            "06_OSFI_Third_Party_Risk_p16_c2",
+            "05_OSFI_B13_Cyber_Risk_p19_c3",
+            "06_OSFI_Third_Party_Risk_p16_c1",
+            "06_OSFI_Third_Party_Risk_p30_c1",
+            "04_OSFI_E21_Operational_Risk_p20_c1",
+            "03_FINTRAC_EFT_Reporting_p55_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      }
+    ]
+  },
+  {
+    "profile_name": "dense_only",
+    "aggregate": {
+      "recall@5": 0.5583333333333333,
+      "recall@10": 0.6083333333333333,
+      "ndcg@5": 0.5019782990275442,
+      "mrr": 0.5375,
+      "qps": 9.097563958945159,
+      "avg_latency_sec": 0.1099195349999988
+    },
+    "per_query": [
+      {
+        "query": "What is a large cash transaction under FINTRAC?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 0.9197207891481876,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p3_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "01_FINTRAC_LCTR_Guidance_p6_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "01_FINTRAC_LCTR_Guidance_p12_c1",
+          "01_FINTRAC_LCTR_Guidance_p14_c1",
+          "01_FINTRAC_LCTR_Guidance_p1_c2",
+          "01_FINTRAC_LCTR_Guidance_p5_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "What is a large cash transaction under FINTRAC?",
+          "rewritten_query": "what is a large cash transaction under fintrac?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p3_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "01_FINTRAC_LCTR_Guidance_p1_c1",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "01_FINTRAC_LCTR_Guidance_p6_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "01_FINTRAC_LCTR_Guidance_p12_c1",
+            "01_FINTRAC_LCTR_Guidance_p14_c1",
+            "01_FINTRAC_LCTR_Guidance_p1_c2",
+            "01_FINTRAC_LCTR_Guidance_p5_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "How long do I have to submit a Large Cash Transaction Report after receiving the cash?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "02_FINTRAC_24hour_Rule_p5_c1",
+          "01_FINTRAC_LCTR_Guidance_p6_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c2",
+          "01_FINTRAC_LCTR_Guidance_p31_c1",
+          "02_FINTRAC_24hour_Rule_p33_c1",
+          "02_FINTRAC_24hour_Rule_p31_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p4_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "How long do I have to submit a Large Cash Transaction Report after receiving the cash?",
+          "rewritten_query": "how long do i have to submit a large cash transaction report after receiving the cash?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "02_FINTRAC_24hour_Rule_p5_c1",
+            "01_FINTRAC_LCTR_Guidance_p6_c1",
+            "01_FINTRAC_LCTR_Guidance_p3_c1",
+            "01_FINTRAC_LCTR_Guidance_p3_c2",
+            "01_FINTRAC_LCTR_Guidance_p31_c1",
+            "02_FINTRAC_24hour_Rule_p33_c1",
+            "02_FINTRAC_24hour_Rule_p31_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is the 24-hour rule for cash transactions?",
+        "recall@5": 0.6666666666666666,
+        "recall@10": 0.6666666666666666,
+        "ndcg@5": 0.6713860725233041,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "02_FINTRAC_24hour_Rule_p3_c1",
+          "02_FINTRAC_24hour_Rule_p33_c1",
+          "02_FINTRAC_24hour_Rule_p30_c1",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "02_FINTRAC_24hour_Rule_p22_c1",
+          "02_FINTRAC_24hour_Rule_p26_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "02_FINTRAC_24hour_Rule_p18_c1",
+          "02_FINTRAC_24hour_Rule_p1_c1",
+          "02_FINTRAC_24hour_Rule_p15_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "02_FINTRAC_24hour_Rule_p3_c1",
+          "02_FINTRAC_24hour_Rule_p3_c2"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "What is the 24-hour rule for cash transactions?",
+          "rewritten_query": "what is the 24-hour rule for cash transactions?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "02_FINTRAC_24hour_Rule_p3_c1",
+            "02_FINTRAC_24hour_Rule_p33_c1",
+            "02_FINTRAC_24hour_Rule_p30_c1",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "02_FINTRAC_24hour_Rule_p22_c1",
+            "02_FINTRAC_24hour_Rule_p26_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "02_FINTRAC_24hour_Rule_p18_c1",
+            "02_FINTRAC_24hour_Rule_p1_c1",
+            "02_FINTRAC_24hour_Rule_p15_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "Which transaction types does the 24-hour rule apply to?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "02_FINTRAC_24hour_Rule_p3_c1",
+          "02_FINTRAC_24hour_Rule_p10_c2",
+          "02_FINTRAC_24hour_Rule_p2_c1",
+          "02_FINTRAC_24hour_Rule_p7_c2",
+          "02_FINTRAC_24hour_Rule_p11_c1",
+          "02_FINTRAC_24hour_Rule_p1_c1",
+          "02_FINTRAC_24hour_Rule_p4_c1",
+          "01_FINTRAC_LCTR_Guidance_p71_c2",
+          "01_FINTRAC_LCTR_Guidance_p8_c2",
+          "02_FINTRAC_24hour_Rule_p14_c1"
+        ],
+        "relevant_ids": [
+          "02_FINTRAC_24hour_Rule_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "Which transaction types does the 24-hour rule apply to?",
+          "rewritten_query": "which transaction types does the 24-hour rule apply to?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "02_FINTRAC_24hour_Rule_p3_c1",
+            "02_FINTRAC_24hour_Rule_p10_c2",
+            "02_FINTRAC_24hour_Rule_p2_c1",
+            "02_FINTRAC_24hour_Rule_p7_c2",
+            "02_FINTRAC_24hour_Rule_p11_c1",
+            "02_FINTRAC_24hour_Rule_p1_c1",
+            "02_FINTRAC_24hour_Rule_p4_c1",
+            "01_FINTRAC_LCTR_Guidance_p71_c2",
+            "01_FINTRAC_LCTR_Guidance_p8_c2",
+            "02_FINTRAC_24hour_Rule_p14_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "How long must I keep a copy of a Large Cash Transaction Report?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "03_FINTRAC_EFT_Reporting_p28_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "01_FINTRAC_LCTR_Guidance_p9_c1",
+          "02_FINTRAC_24hour_Rule_p5_c1",
+          "01_FINTRAC_LCTR_Guidance_p6_c1",
+          "01_FINTRAC_LCTR_Guidance_p31_c1",
+          "02_FINTRAC_24hour_Rule_p23_c2",
+          "01_FINTRAC_LCTR_Guidance_p9_c2"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "How long must I keep a copy of a Large Cash Transaction Report?",
+          "rewritten_query": "how long must i keep a copy of a large cash transaction report?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "03_FINTRAC_EFT_Reporting_p28_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "01_FINTRAC_LCTR_Guidance_p9_c1",
+            "02_FINTRAC_24hour_Rule_p5_c1",
+            "01_FINTRAC_LCTR_Guidance_p6_c1",
+            "01_FINTRAC_LCTR_Guidance_p31_c1",
+            "02_FINTRAC_24hour_Rule_p23_c2",
+            "01_FINTRAC_LCTR_Guidance_p9_c2"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "Does cash include cheques or money orders for FINTRAC reporting purposes?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 0.43067655807339306,
+        "mrr": 0.25,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "03_FINTRAC_EFT_Reporting_p1_c1",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1",
+          "01_FINTRAC_LCTR_Guidance_p71_c2",
+          "02_FINTRAC_24hour_Rule_p1_c1",
+          "03_FINTRAC_EFT_Reporting_p27_c2",
+          "01_FINTRAC_LCTR_Guidance_p5_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c1",
+          "01_FINTRAC_LCTR_Guidance_p6_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "Does cash include cheques or money orders for FINTRAC reporting purposes?",
+          "rewritten_query": "does cash include cheques or money orders for fintrac reporting purposes?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p1_c1",
+            "03_FINTRAC_EFT_Reporting_p1_c1",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "01_FINTRAC_LCTR_Guidance_p3_c1",
+            "01_FINTRAC_LCTR_Guidance_p71_c2",
+            "02_FINTRAC_24hour_Rule_p1_c1",
+            "03_FINTRAC_EFT_Reporting_p27_c2",
+            "01_FINTRAC_LCTR_Guidance_p5_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c1",
+            "01_FINTRAC_LCTR_Guidance_p6_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "Can I delegate my FINTRAC reporting responsibility to a service provider?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "03_FINTRAC_EFT_Reporting_p3_c2",
+          "01_FINTRAC_LCTR_Guidance_p27_c2",
+          "01_FINTRAC_LCTR_Guidance_p2_c2",
+          "01_FINTRAC_LCTR_Guidance_p27_c1",
+          "03_FINTRAC_EFT_Reporting_p43_c2",
+          "01_FINTRAC_LCTR_Guidance_p80_c2",
+          "03_FINTRAC_EFT_Reporting_p20_c1",
+          "03_FINTRAC_EFT_Reporting_p43_c1",
+          "03_FINTRAC_EFT_Reporting_p42_c1",
+          "03_FINTRAC_EFT_Reporting_p29_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p2_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "Can I delegate my FINTRAC reporting responsibility to a service provider?",
+          "rewritten_query": "can i delegate my fintrac reporting responsibility to a service provider?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "03_FINTRAC_EFT_Reporting_p3_c2",
+            "01_FINTRAC_LCTR_Guidance_p27_c2",
+            "01_FINTRAC_LCTR_Guidance_p2_c2",
+            "01_FINTRAC_LCTR_Guidance_p27_c1",
+            "03_FINTRAC_EFT_Reporting_p43_c2",
+            "01_FINTRAC_LCTR_Guidance_p80_c2",
+            "03_FINTRAC_EFT_Reporting_p20_c1",
+            "03_FINTRAC_EFT_Reporting_p43_c1",
+            "03_FINTRAC_EFT_Reporting_p42_c1",
+            "03_FINTRAC_EFT_Reporting_p29_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "When do I need to file a Suspicious Transaction Report?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 0.6309297535714575,
+        "mrr": 0.5,
+        "retrieved_ids": [
+          "03_FINTRAC_EFT_Reporting_p26_c2",
+          "01_FINTRAC_LCTR_Guidance_p12_c1",
+          "02_FINTRAC_24hour_Rule_p6_c2",
+          "03_FINTRAC_EFT_Reporting_p27_c2",
+          "02_FINTRAC_24hour_Rule_p5_c1",
+          "03_FINTRAC_EFT_Reporting_p27_c1",
+          "01_FINTRAC_LCTR_Guidance_p11_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "02_FINTRAC_24hour_Rule_p31_c2"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "When do I need to file a Suspicious Transaction Report?",
+          "rewritten_query": "when do i need to file a suspicious transaction report?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "03_FINTRAC_EFT_Reporting_p26_c2",
+            "01_FINTRAC_LCTR_Guidance_p12_c1",
+            "02_FINTRAC_24hour_Rule_p6_c2",
+            "03_FINTRAC_EFT_Reporting_p27_c2",
+            "02_FINTRAC_24hour_Rule_p5_c1",
+            "03_FINTRAC_EFT_Reporting_p27_c1",
+            "01_FINTRAC_LCTR_Guidance_p11_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "02_FINTRAC_24hour_Rule_p31_c2"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "If a large cash transaction involves a reportable electronic funds transfer, what must I submit?",
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "ndcg@5": 0.6131471927654584,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "03_FINTRAC_EFT_Reporting_p27_c2",
+          "03_FINTRAC_EFT_Reporting_p18_c1",
+          "03_FINTRAC_EFT_Reporting_p28_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "01_FINTRAC_LCTR_Guidance_p6_c1",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "01_FINTRAC_LCTR_Guidance_p5_c1",
+          "03_FINTRAC_EFT_Reporting_p10_c2",
+          "03_FINTRAC_EFT_Reporting_p7_c2"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "03_FINTRAC_EFT_Reporting_p1_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "If a large cash transaction involves a reportable electronic funds transfer, what must I submit?",
+          "rewritten_query": "if a large cash transaction involves a reportable electronic funds transfer, what must i submit?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "03_FINTRAC_EFT_Reporting_p27_c2",
+            "03_FINTRAC_EFT_Reporting_p18_c1",
+            "03_FINTRAC_EFT_Reporting_p28_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "01_FINTRAC_LCTR_Guidance_p6_c1",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "01_FINTRAC_LCTR_Guidance_p5_c1",
+            "03_FINTRAC_EFT_Reporting_p10_c2",
+            "03_FINTRAC_EFT_Reporting_p7_c2"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What does OSFI Guideline E-21 cover?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "05_OSFI_B13_Cyber_Risk_p4_c2",
+          "06_OSFI_Third_Party_Risk_p7_c2",
+          "06_OSFI_Third_Party_Risk_p6_c2",
+          "05_OSFI_B13_Cyber_Risk_p2_c1",
+          "06_OSFI_Third_Party_Risk_p25_c3",
+          "06_OSFI_Third_Party_Risk_p3_c2",
+          "06_OSFI_Third_Party_Risk_p15_c3",
+          "06_OSFI_Third_Party_Risk_p27_c1",
+          "06_OSFI_Third_Party_Risk_p8_c2",
+          "06_OSFI_Third_Party_Risk_p25_c1"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p1_c1",
+          "04_OSFI_E21_Operational_Risk_p2_c1",
+          "04_OSFI_E21_Operational_Risk_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "What does OSFI Guideline E-21 cover?",
+          "rewritten_query": "what does osfi guideline e-21 cover?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "05_OSFI_B13_Cyber_Risk_p4_c2",
+            "06_OSFI_Third_Party_Risk_p7_c2",
+            "06_OSFI_Third_Party_Risk_p6_c2",
+            "05_OSFI_B13_Cyber_Risk_p2_c1",
+            "06_OSFI_Third_Party_Risk_p25_c3",
+            "06_OSFI_Third_Party_Risk_p3_c2",
+            "06_OSFI_Third_Party_Risk_p15_c3",
+            "06_OSFI_Third_Party_Risk_p27_c1",
+            "06_OSFI_Third_Party_Risk_p8_c2",
+            "06_OSFI_Third_Party_Risk_p25_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is 'tolerance for disruption' under OSFI E-21?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c3",
+          "04_OSFI_E21_Operational_Risk_p13_c1",
+          "04_OSFI_E21_Operational_Risk_p13_c2",
+          "05_OSFI_B13_Cyber_Risk_p14_c1",
+          "06_OSFI_Third_Party_Risk_p27_c2",
+          "06_OSFI_Third_Party_Risk_p19_c2",
+          "06_OSFI_Third_Party_Risk_p27_c1",
+          "04_OSFI_E21_Operational_Risk_p6_c2",
+          "05_OSFI_B13_Cyber_Risk_p2_c1",
+          "05_OSFI_B13_Cyber_Risk_p22_c2"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c3"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "What is 'tolerance for disruption' under OSFI E-21?",
+          "rewritten_query": "what is 'tolerance for disruption' under osfi e-21?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "04_OSFI_E21_Operational_Risk_p4_c3",
+            "04_OSFI_E21_Operational_Risk_p13_c1",
+            "04_OSFI_E21_Operational_Risk_p13_c2",
+            "05_OSFI_B13_Cyber_Risk_p14_c1",
+            "06_OSFI_Third_Party_Risk_p27_c2",
+            "06_OSFI_Third_Party_Risk_p19_c2",
+            "06_OSFI_Third_Party_Risk_p27_c1",
+            "04_OSFI_E21_Operational_Risk_p6_c2",
+            "05_OSFI_B13_Cyber_Risk_p2_c1",
+            "05_OSFI_B13_Cyber_Risk_p22_c2"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is operational resilience according to OSFI?",
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "ndcg@5": 0.38685280723454163,
+        "mrr": 0.5,
+        "retrieved_ids": [
+          "05_OSFI_B13_Cyber_Risk_p7_c2",
+          "04_OSFI_E21_Operational_Risk_p3_c1",
+          "04_OSFI_E21_Operational_Risk_p1_c1",
+          "04_OSFI_E21_Operational_Risk_p4_c1",
+          "04_OSFI_E21_Operational_Risk_p6_c2",
+          "05_OSFI_B13_Cyber_Risk_p4_c2",
+          "04_OSFI_E21_Operational_Risk_p5_c2",
+          "04_OSFI_E21_Operational_Risk_p12_c1",
+          "04_OSFI_E21_Operational_Risk_p2_c2",
+          "04_OSFI_E21_Operational_Risk_p15_c1"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p2_c2",
+          "04_OSFI_E21_Operational_Risk_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "What is operational resilience according to OSFI?",
+          "rewritten_query": "what is operational resilience according to osfi?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "05_OSFI_B13_Cyber_Risk_p7_c2",
+            "04_OSFI_E21_Operational_Risk_p3_c1",
+            "04_OSFI_E21_Operational_Risk_p1_c1",
+            "04_OSFI_E21_Operational_Risk_p4_c1",
+            "04_OSFI_E21_Operational_Risk_p6_c2",
+            "05_OSFI_B13_Cyber_Risk_p4_c2",
+            "04_OSFI_E21_Operational_Risk_p5_c2",
+            "04_OSFI_E21_Operational_Risk_p12_c1",
+            "04_OSFI_E21_Operational_Risk_p2_c2",
+            "04_OSFI_E21_Operational_Risk_p15_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What does a crisis management team do under E-21?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c2",
+          "04_OSFI_E21_Operational_Risk_p18_c1",
+          "05_OSFI_B13_Cyber_Risk_p13_c1",
+          "04_OSFI_E21_Operational_Risk_p11_c2",
+          "05_OSFI_B13_Cyber_Risk_p12_c2",
+          "06_OSFI_Third_Party_Risk_p7_c2",
+          "06_OSFI_Third_Party_Risk_p21_c3",
+          "05_OSFI_B13_Cyber_Risk_p13_c2",
+          "06_OSFI_Third_Party_Risk_p29_c3",
+          "05_OSFI_B13_Cyber_Risk_p5_c3"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c2"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "What does a crisis management team do under E-21?",
+          "rewritten_query": "what does a crisis management team do under e-21?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "04_OSFI_E21_Operational_Risk_p4_c2",
+            "04_OSFI_E21_Operational_Risk_p18_c1",
+            "05_OSFI_B13_Cyber_Risk_p13_c1",
+            "04_OSFI_E21_Operational_Risk_p11_c2",
+            "05_OSFI_B13_Cyber_Risk_p12_c2",
+            "06_OSFI_Third_Party_Risk_p7_c2",
+            "06_OSFI_Third_Party_Risk_p21_c3",
+            "05_OSFI_B13_Cyber_Risk_p13_c2",
+            "06_OSFI_Third_Party_Risk_p29_c3",
+            "05_OSFI_B13_Cyber_Risk_p5_c3"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is the scope of OSFI Guideline B-13?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p25_c3",
+          "05_OSFI_B13_Cyber_Risk_p4_c2",
+          "04_OSFI_E21_Operational_Risk_p21_c1",
+          "06_OSFI_Third_Party_Risk_p7_c2",
+          "05_OSFI_B13_Cyber_Risk_p2_c1",
+          "06_OSFI_Third_Party_Risk_p27_c1",
+          "06_OSFI_Third_Party_Risk_p3_c2",
+          "06_OSFI_Third_Party_Risk_p6_c2",
+          "04_OSFI_E21_Operational_Risk_p3_c2",
+          "06_OSFI_Third_Party_Risk_p3_c3"
+        ],
+        "relevant_ids": [
+          "05_OSFI_B13_Cyber_Risk_p1_c1",
+          "05_OSFI_B13_Cyber_Risk_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "What is the scope of OSFI Guideline B-13?",
+          "rewritten_query": "what is the scope of osfi guideline b-13?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p25_c3",
+            "05_OSFI_B13_Cyber_Risk_p4_c2",
+            "04_OSFI_E21_Operational_Risk_p21_c1",
+            "06_OSFI_Third_Party_Risk_p7_c2",
+            "05_OSFI_B13_Cyber_Risk_p2_c1",
+            "06_OSFI_Third_Party_Risk_p27_c1",
+            "06_OSFI_Third_Party_Risk_p3_c2",
+            "06_OSFI_Third_Party_Risk_p6_c2",
+            "04_OSFI_E21_Operational_Risk_p3_c2",
+            "06_OSFI_Third_Party_Risk_p3_c3"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What are the three cyber-security capabilities outlined in B-13?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "05_OSFI_B13_Cyber_Risk_p16_c1",
+          "06_OSFI_Third_Party_Risk_p27_c2",
+          "04_OSFI_E21_Operational_Risk_p21_c1",
+          "06_OSFI_Third_Party_Risk_p27_c1",
+          "05_OSFI_B13_Cyber_Risk_p18_c1",
+          "05_OSFI_B13_Cyber_Risk_p22_c1",
+          "05_OSFI_B13_Cyber_Risk_p16_c2",
+          "04_OSFI_E21_Operational_Risk_p19_c2",
+          "06_OSFI_Third_Party_Risk_p25_c1",
+          "05_OSFI_B13_Cyber_Risk_p23_c1"
+        ],
+        "relevant_ids": [
+          "05_OSFI_B13_Cyber_Risk_p2_c1",
+          "05_OSFI_B13_Cyber_Risk_p4_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "What are the three cyber-security capabilities outlined in B-13?",
+          "rewritten_query": "what are the three cyber-security capabilities outlined in b-13?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "05_OSFI_B13_Cyber_Risk_p16_c1",
+            "06_OSFI_Third_Party_Risk_p27_c2",
+            "04_OSFI_E21_Operational_Risk_p21_c1",
+            "06_OSFI_Third_Party_Risk_p27_c1",
+            "05_OSFI_B13_Cyber_Risk_p18_c1",
+            "05_OSFI_B13_Cyber_Risk_p22_c1",
+            "05_OSFI_B13_Cyber_Risk_p16_c2",
+            "04_OSFI_E21_Operational_Risk_p19_c2",
+            "06_OSFI_Third_Party_Risk_p25_c1",
+            "05_OSFI_B13_Cyber_Risk_p23_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is the criticality assessment for third-party arrangements under B-10?",
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "ndcg@5": 0.38685280723454163,
+        "mrr": 0.5,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p10_c2",
+          "06_OSFI_Third_Party_Risk_p5_c1",
+          "06_OSFI_Third_Party_Risk_p12_c1",
+          "06_OSFI_Third_Party_Risk_p12_c2",
+          "06_OSFI_Third_Party_Risk_p11_c2",
+          "06_OSFI_Third_Party_Risk_p4_c1",
+          "06_OSFI_Third_Party_Risk_p13_c2",
+          "04_OSFI_E21_Operational_Risk_p5_c1",
+          "06_OSFI_Third_Party_Risk_p27_c2",
+          "06_OSFI_Third_Party_Risk_p10_c1"
+        ],
+        "relevant_ids": [
+          "06_OSFI_Third_Party_Risk_p4_c1",
+          "06_OSFI_Third_Party_Risk_p5_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "What is the criticality assessment for third-party arrangements under B-10?",
+          "rewritten_query": "what is the criticality assessment for third-party arrangements under b-10?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p10_c2",
+            "06_OSFI_Third_Party_Risk_p5_c1",
+            "06_OSFI_Third_Party_Risk_p12_c1",
+            "06_OSFI_Third_Party_Risk_p12_c2",
+            "06_OSFI_Third_Party_Risk_p11_c2",
+            "06_OSFI_Third_Party_Risk_p4_c1",
+            "06_OSFI_Third_Party_Risk_p13_c2",
+            "04_OSFI_E21_Operational_Risk_p5_c1",
+            "06_OSFI_Third_Party_Risk_p27_c2",
+            "06_OSFI_Third_Party_Risk_p10_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is required of third parties regarding incident management under B-10?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p22_c1",
+          "04_OSFI_E21_Operational_Risk_p5_c1",
+          "06_OSFI_Third_Party_Risk_p9_c2",
+          "06_OSFI_Third_Party_Risk_p22_c2",
+          "06_OSFI_Third_Party_Risk_p11_c3",
+          "06_OSFI_Third_Party_Risk_p27_c3",
+          "06_OSFI_Third_Party_Risk_p22_c3",
+          "04_OSFI_E21_Operational_Risk_p17_c2",
+          "06_OSFI_Third_Party_Risk_p21_c2",
+          "06_OSFI_Third_Party_Risk_p29_c3"
+        ],
+        "relevant_ids": [
+          "06_OSFI_Third_Party_Risk_p22_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "What is required of third parties regarding incident management under B-10?",
+          "rewritten_query": "what is required of third parties regarding incident management under b-10?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p22_c1",
+            "04_OSFI_E21_Operational_Risk_p5_c1",
+            "06_OSFI_Third_Party_Risk_p9_c2",
+            "06_OSFI_Third_Party_Risk_p22_c2",
+            "06_OSFI_Third_Party_Risk_p11_c3",
+            "06_OSFI_Third_Party_Risk_p27_c3",
+            "06_OSFI_Third_Party_Risk_p22_c3",
+            "04_OSFI_E21_Operational_Risk_p17_c2",
+            "06_OSFI_Third_Party_Risk_p21_c2",
+            "06_OSFI_Third_Party_Risk_p29_c3"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What time is standard hotel check-in?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "02_FINTRAC_24hour_Rule_p27_c1",
+          "02_FINTRAC_24hour_Rule_p28_c1",
+          "02_FINTRAC_24hour_Rule_p26_c1",
+          "02_FINTRAC_24hour_Rule_p30_c2",
+          "02_FINTRAC_24hour_Rule_p35_c3",
+          "01_FINTRAC_LCTR_Guidance_p28_c2",
+          "03_FINTRAC_EFT_Reporting_p146_c2",
+          "03_FINTRAC_EFT_Reporting_p74_c2",
+          "03_FINTRAC_EFT_Reporting_p65_c2",
+          "02_FINTRAC_24hour_Rule_p33_c1"
+        ],
+        "relevant_ids": [],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "What time is standard hotel check-in?",
+          "rewritten_query": "what time is standard hotel check-in?",
+          "routed_group": "guest_stay",
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "02_FINTRAC_24hour_Rule_p27_c1",
+            "02_FINTRAC_24hour_Rule_p28_c1",
+            "02_FINTRAC_24hour_Rule_p26_c1",
+            "02_FINTRAC_24hour_Rule_p30_c2",
+            "02_FINTRAC_24hour_Rule_p35_c3",
+            "01_FINTRAC_LCTR_Guidance_p28_c2",
+            "03_FINTRAC_EFT_Reporting_p146_c2",
+            "03_FINTRAC_EFT_Reporting_p74_c2",
+            "03_FINTRAC_EFT_Reporting_p65_c2",
+            "02_FINTRAC_24hour_Rule_p33_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "How much is self-parking at the hotel?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "03_FINTRAC_EFT_Reporting_p163_c1",
+          "03_FINTRAC_EFT_Reporting_p150_c1",
+          "03_FINTRAC_EFT_Reporting_p159_c1",
+          "03_FINTRAC_EFT_Reporting_p148_c1",
+          "03_FINTRAC_EFT_Reporting_p190_c1",
+          "03_FINTRAC_EFT_Reporting_p194_c1",
+          "01_FINTRAC_LCTR_Guidance_p17_c2",
+          "01_FINTRAC_LCTR_Guidance_p72_c1",
+          "02_FINTRAC_24hour_Rule_p30_c2",
+          "02_FINTRAC_24hour_Rule_p35_c3"
+        ],
+        "relevant_ids": [],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "How much is self-parking at the hotel?",
+          "rewritten_query": "how much is self-parking at the hotel?",
+          "routed_group": "parking_transport",
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "03_FINTRAC_EFT_Reporting_p163_c1",
+            "03_FINTRAC_EFT_Reporting_p150_c1",
+            "03_FINTRAC_EFT_Reporting_p159_c1",
+            "03_FINTRAC_EFT_Reporting_p148_c1",
+            "03_FINTRAC_EFT_Reporting_p190_c1",
+            "03_FINTRAC_EFT_Reporting_p194_c1",
+            "01_FINTRAC_LCTR_Guidance_p17_c2",
+            "01_FINTRAC_LCTR_Guidance_p72_c1",
+            "02_FINTRAC_24hour_Rule_p30_c2",
+            "02_FINTRAC_24hour_Rule_p35_c3"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What are the EU GDPR penalty caps for data breaches?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "05_OSFI_B13_Cyber_Risk_p19_c3",
+          "03_FINTRAC_EFT_Reporting_p69_c1",
+          "06_OSFI_Third_Party_Risk_p16_c2",
+          "01_FINTRAC_LCTR_Guidance_p18_c1",
+          "04_OSFI_E21_Operational_Risk_p8_c2",
+          "05_OSFI_B13_Cyber_Risk_p19_c2",
+          "03_FINTRAC_EFT_Reporting_p32_c1",
+          "05_OSFI_B13_Cyber_Risk_p20_c1",
+          "02_FINTRAC_24hour_Rule_p4_c2",
+          "03_FINTRAC_EFT_Reporting_p33_c1"
+        ],
+        "relevant_ids": [],
+        "retrieval_diagnostics": {
+          "profile_name": "dense_only",
+          "original_query": "What are the EU GDPR penalty caps for data breaches?",
+          "rewritten_query": "what are the eu gdpr penalty caps for data breaches?",
+          "routed_group": null,
+          "num_bm25": 0,
+          "num_dense": 10,
+          "num_fused": 0,
+          "num_final": 10,
+          "final_chunk_ids": [
+            "05_OSFI_B13_Cyber_Risk_p19_c3",
+            "03_FINTRAC_EFT_Reporting_p69_c1",
+            "06_OSFI_Third_Party_Risk_p16_c2",
+            "01_FINTRAC_LCTR_Guidance_p18_c1",
+            "04_OSFI_E21_Operational_Risk_p8_c2",
+            "05_OSFI_B13_Cyber_Risk_p19_c2",
+            "03_FINTRAC_EFT_Reporting_p32_c1",
+            "05_OSFI_B13_Cyber_Risk_p20_c1",
+            "02_FINTRAC_24hour_Rule_p4_c2",
+            "03_FINTRAC_EFT_Reporting_p33_c1"
+          ],
+          "top_weighted_rrf_score": null,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      }
+    ]
+  },
+  {
+    "profile_name": "hybrid",
+    "aggregate": {
+      "recall@5": 0.5583333333333333,
+      "recall@10": 0.5583333333333333,
+      "ndcg@5": 0.5580874290313405,
+      "mrr": 0.6125,
+      "qps": 9.136595390258657,
+      "avg_latency_sec": 0.1094499600000006
+    },
+    "per_query": [
+      {
+        "query": "What is a large cash transaction under FINTRAC?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p3_c1",
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "01_FINTRAC_LCTR_Guidance_p12_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "What is a large cash transaction under FINTRAC?",
+          "rewritten_query": "what is a large cash transaction under fintrac?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p3_c1",
+            "01_FINTRAC_LCTR_Guidance_p1_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "01_FINTRAC_LCTR_Guidance_p12_c1"
+          ],
+          "top_weighted_rrf_score": 0.02607086197778953,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "How long do I have to submit a Large Cash Transaction Report after receiving the cash?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "01_FINTRAC_LCTR_Guidance_p3_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "02_FINTRAC_24hour_Rule_p5_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p4_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "How long do I have to submit a Large Cash Transaction Report after receiving the cash?",
+          "rewritten_query": "how long do i have to submit a large cash transaction report after receiving the cash?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "01_FINTRAC_LCTR_Guidance_p3_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "02_FINTRAC_24hour_Rule_p5_c1"
+          ],
+          "top_weighted_rrf_score": 0.02591725214676034,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is the 24-hour rule for cash transactions?",
+        "recall@5": 0.6666666666666666,
+        "recall@10": 0.6666666666666666,
+        "ndcg@5": 0.6713860725233041,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "02_FINTRAC_24hour_Rule_p3_c1",
+          "02_FINTRAC_24hour_Rule_p30_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "02_FINTRAC_24hour_Rule_p1_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "02_FINTRAC_24hour_Rule_p3_c1",
+          "02_FINTRAC_24hour_Rule_p3_c2"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "What is the 24-hour rule for cash transactions?",
+          "rewritten_query": "what is the 24-hour rule for cash transactions?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "02_FINTRAC_24hour_Rule_p3_c1",
+            "02_FINTRAC_24hour_Rule_p30_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "02_FINTRAC_24hour_Rule_p1_c1"
+          ],
+          "top_weighted_rrf_score": 0.02591725214676034,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "Which transaction types does the 24-hour rule apply to?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "02_FINTRAC_24hour_Rule_p3_c1",
+          "02_FINTRAC_24hour_Rule_p7_c2",
+          "02_FINTRAC_24hour_Rule_p2_c1",
+          "02_FINTRAC_24hour_Rule_p1_c1",
+          "02_FINTRAC_24hour_Rule_p10_c2"
+        ],
+        "relevant_ids": [
+          "02_FINTRAC_24hour_Rule_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "Which transaction types does the 24-hour rule apply to?",
+          "rewritten_query": "which transaction types does the 24-hour rule apply to?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "02_FINTRAC_24hour_Rule_p3_c1",
+            "02_FINTRAC_24hour_Rule_p7_c2",
+            "02_FINTRAC_24hour_Rule_p2_c1",
+            "02_FINTRAC_24hour_Rule_p1_c1",
+            "02_FINTRAC_24hour_Rule_p10_c2"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "How long must I keep a copy of a Large Cash Transaction Report?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "03_FINTRAC_EFT_Reporting_p28_c1",
+          "01_FINTRAC_LCTR_Guidance_p31_c1",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "How long must I keep a copy of a Large Cash Transaction Report?",
+          "rewritten_query": "how long must i keep a copy of a large cash transaction report?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "03_FINTRAC_EFT_Reporting_p28_c1",
+            "01_FINTRAC_LCTR_Guidance_p31_c1",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "Does cash include cheques or money orders for FINTRAC reporting purposes?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p3_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c1",
+          "01_FINTRAC_LCTR_Guidance_p6_c1",
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "03_FINTRAC_EFT_Reporting_p1_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "Does cash include cheques or money orders for FINTRAC reporting purposes?",
+          "rewritten_query": "does cash include cheques or money orders for fintrac reporting purposes?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p3_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c1",
+            "01_FINTRAC_LCTR_Guidance_p6_c1",
+            "01_FINTRAC_LCTR_Guidance_p1_c1",
+            "03_FINTRAC_EFT_Reporting_p1_c1"
+          ],
+          "top_weighted_rrf_score": 0.025461065573770494,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "Can I delegate my FINTRAC reporting responsibility to a service provider?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "03_FINTRAC_EFT_Reporting_p3_c2",
+          "01_FINTRAC_LCTR_Guidance_p2_c2",
+          "01_FINTRAC_LCTR_Guidance_p80_c2",
+          "01_FINTRAC_LCTR_Guidance_p27_c2",
+          "01_FINTRAC_LCTR_Guidance_p27_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p2_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "Can I delegate my FINTRAC reporting responsibility to a service provider?",
+          "rewritten_query": "can i delegate my fintrac reporting responsibility to a service provider?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "03_FINTRAC_EFT_Reporting_p3_c2",
+            "01_FINTRAC_LCTR_Guidance_p2_c2",
+            "01_FINTRAC_LCTR_Guidance_p80_c2",
+            "01_FINTRAC_LCTR_Guidance_p27_c2",
+            "01_FINTRAC_LCTR_Guidance_p27_c1"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "When do I need to file a Suspicious Transaction Report?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c1",
+          "03_FINTRAC_EFT_Reporting_p26_c2",
+          "02_FINTRAC_24hour_Rule_p6_c2",
+          "03_FINTRAC_EFT_Reporting_p27_c1",
+          "03_FINTRAC_EFT_Reporting_p27_c2"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "When do I need to file a Suspicious Transaction Report?",
+          "rewritten_query": "when do i need to file a suspicious transaction report?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p12_c1",
+            "03_FINTRAC_EFT_Reporting_p26_c2",
+            "02_FINTRAC_24hour_Rule_p6_c2",
+            "03_FINTRAC_EFT_Reporting_p27_c1",
+            "03_FINTRAC_EFT_Reporting_p27_c2"
+          ],
+          "top_weighted_rrf_score": 0.02596509783183501,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "If a large cash transaction involves a reportable electronic funds transfer, what must I submit?",
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "ndcg@5": 0.6131471927654584,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "03_FINTRAC_EFT_Reporting_p27_c2",
+          "03_FINTRAC_EFT_Reporting_p7_c2",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "03_FINTRAC_EFT_Reporting_p10_c2"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "03_FINTRAC_EFT_Reporting_p1_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "If a large cash transaction involves a reportable electronic funds transfer, what must I submit?",
+          "rewritten_query": "if a large cash transaction involves a reportable electronic funds transfer, what must i submit?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "03_FINTRAC_EFT_Reporting_p27_c2",
+            "03_FINTRAC_EFT_Reporting_p7_c2",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "03_FINTRAC_EFT_Reporting_p10_c2"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What does OSFI Guideline E-21 cover?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "05_OSFI_B13_Cyber_Risk_p4_c2",
+          "06_OSFI_Third_Party_Risk_p7_c2",
+          "06_OSFI_Third_Party_Risk_p6_c2",
+          "06_OSFI_Third_Party_Risk_p15_c3",
+          "05_OSFI_B13_Cyber_Risk_p2_c1"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p1_c1",
+          "04_OSFI_E21_Operational_Risk_p2_c1",
+          "04_OSFI_E21_Operational_Risk_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "What does OSFI Guideline E-21 cover?",
+          "rewritten_query": "what does osfi guideline e-21 cover?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "05_OSFI_B13_Cyber_Risk_p4_c2",
+            "06_OSFI_Third_Party_Risk_p7_c2",
+            "06_OSFI_Third_Party_Risk_p6_c2",
+            "06_OSFI_Third_Party_Risk_p15_c3",
+            "05_OSFI_B13_Cyber_Risk_p2_c1"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is 'tolerance for disruption' under OSFI E-21?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c3",
+          "04_OSFI_E21_Operational_Risk_p13_c1",
+          "04_OSFI_E21_Operational_Risk_p13_c2",
+          "05_OSFI_B13_Cyber_Risk_p14_c1",
+          "06_OSFI_Third_Party_Risk_p27_c2"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c3"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "What is 'tolerance for disruption' under OSFI E-21?",
+          "rewritten_query": "what is 'tolerance for disruption' under osfi e-21?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "04_OSFI_E21_Operational_Risk_p4_c3",
+            "04_OSFI_E21_Operational_Risk_p13_c1",
+            "04_OSFI_E21_Operational_Risk_p13_c2",
+            "05_OSFI_B13_Cyber_Risk_p14_c1",
+            "06_OSFI_Third_Party_Risk_p27_c2"
+          ],
+          "top_weighted_rrf_score": 0.02607086197778953,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is operational resilience according to OSFI?",
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "ndcg@5": 0.6131471927654584,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "04_OSFI_E21_Operational_Risk_p3_c1",
+          "04_OSFI_E21_Operational_Risk_p6_c2",
+          "04_OSFI_E21_Operational_Risk_p4_c1",
+          "04_OSFI_E21_Operational_Risk_p12_c1",
+          "04_OSFI_E21_Operational_Risk_p15_c1"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p2_c2",
+          "04_OSFI_E21_Operational_Risk_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "What is operational resilience according to OSFI?",
+          "rewritten_query": "what is operational resilience according to osfi?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "04_OSFI_E21_Operational_Risk_p3_c1",
+            "04_OSFI_E21_Operational_Risk_p6_c2",
+            "04_OSFI_E21_Operational_Risk_p4_c1",
+            "04_OSFI_E21_Operational_Risk_p12_c1",
+            "04_OSFI_E21_Operational_Risk_p15_c1"
+          ],
+          "top_weighted_rrf_score": 0.025359801488833746,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What does a crisis management team do under E-21?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c2",
+          "04_OSFI_E21_Operational_Risk_p18_c1",
+          "06_OSFI_Third_Party_Risk_p7_c2",
+          "05_OSFI_B13_Cyber_Risk_p5_c3",
+          "05_OSFI_B13_Cyber_Risk_p13_c1"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c2"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "What does a crisis management team do under E-21?",
+          "rewritten_query": "what does a crisis management team do under e-21?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "04_OSFI_E21_Operational_Risk_p4_c2",
+            "04_OSFI_E21_Operational_Risk_p18_c1",
+            "06_OSFI_Third_Party_Risk_p7_c2",
+            "05_OSFI_B13_Cyber_Risk_p5_c3",
+            "05_OSFI_B13_Cyber_Risk_p13_c1"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is the scope of OSFI Guideline B-13?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p25_c3",
+          "04_OSFI_E21_Operational_Risk_p21_c1",
+          "05_OSFI_B13_Cyber_Risk_p4_c2",
+          "06_OSFI_Third_Party_Risk_p7_c2",
+          "06_OSFI_Third_Party_Risk_p27_c1"
+        ],
+        "relevant_ids": [
+          "05_OSFI_B13_Cyber_Risk_p1_c1",
+          "05_OSFI_B13_Cyber_Risk_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "What is the scope of OSFI Guideline B-13?",
+          "rewritten_query": "what is the scope of osfi guideline b-13?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p25_c3",
+            "04_OSFI_E21_Operational_Risk_p21_c1",
+            "05_OSFI_B13_Cyber_Risk_p4_c2",
+            "06_OSFI_Third_Party_Risk_p7_c2",
+            "06_OSFI_Third_Party_Risk_p27_c1"
+          ],
+          "top_weighted_rrf_score": 0.02607086197778953,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What are the three cyber-security capabilities outlined in B-13?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p27_c1",
+          "05_OSFI_B13_Cyber_Risk_p16_c1",
+          "05_OSFI_B13_Cyber_Risk_p22_c1",
+          "05_OSFI_B13_Cyber_Risk_p23_c1",
+          "06_OSFI_Third_Party_Risk_p27_c2"
+        ],
+        "relevant_ids": [
+          "05_OSFI_B13_Cyber_Risk_p2_c1",
+          "05_OSFI_B13_Cyber_Risk_p4_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "What are the three cyber-security capabilities outlined in B-13?",
+          "rewritten_query": "what are the three cyber-security capabilities outlined in b-13?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p27_c1",
+            "05_OSFI_B13_Cyber_Risk_p16_c1",
+            "05_OSFI_B13_Cyber_Risk_p22_c1",
+            "05_OSFI_B13_Cyber_Risk_p23_c1",
+            "06_OSFI_Third_Party_Risk_p27_c2"
+          ],
+          "top_weighted_rrf_score": 0.025148809523809525,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is the criticality assessment for third-party arrangements under B-10?",
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "ndcg@5": 0.2640681225725909,
+        "mrr": 0.25,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p12_c1",
+          "06_OSFI_Third_Party_Risk_p10_c2",
+          "06_OSFI_Third_Party_Risk_p11_c2",
+          "06_OSFI_Third_Party_Risk_p4_c1",
+          "06_OSFI_Third_Party_Risk_p12_c2"
+        ],
+        "relevant_ids": [
+          "06_OSFI_Third_Party_Risk_p4_c1",
+          "06_OSFI_Third_Party_Risk_p5_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "What is the criticality assessment for third-party arrangements under B-10?",
+          "rewritten_query": "what is the criticality assessment for third-party arrangements under b-10?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p12_c1",
+            "06_OSFI_Third_Party_Risk_p10_c2",
+            "06_OSFI_Third_Party_Risk_p11_c2",
+            "06_OSFI_Third_Party_Risk_p4_c1",
+            "06_OSFI_Third_Party_Risk_p12_c2"
+          ],
+          "top_weighted_rrf_score": 0.025709081446786367,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is required of third parties regarding incident management under B-10?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p22_c1",
+          "04_OSFI_E21_Operational_Risk_p17_c2",
+          "04_OSFI_E21_Operational_Risk_p5_c1",
+          "06_OSFI_Third_Party_Risk_p9_c2",
+          "06_OSFI_Third_Party_Risk_p22_c2"
+        ],
+        "relevant_ids": [
+          "06_OSFI_Third_Party_Risk_p22_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "What is required of third parties regarding incident management under B-10?",
+          "rewritten_query": "what is required of third parties regarding incident management under b-10?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p22_c1",
+            "04_OSFI_E21_Operational_Risk_p17_c2",
+            "04_OSFI_E21_Operational_Risk_p5_c1",
+            "06_OSFI_Third_Party_Risk_p9_c2",
+            "06_OSFI_Third_Party_Risk_p22_c2"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What time is standard hotel check-in?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "02_FINTRAC_24hour_Rule_p27_c1",
+          "02_FINTRAC_24hour_Rule_p28_c1",
+          "02_FINTRAC_24hour_Rule_p26_c1",
+          "01_FINTRAC_LCTR_Guidance_p28_c2",
+          "02_FINTRAC_24hour_Rule_p30_c2"
+        ],
+        "relevant_ids": [],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "What time is standard hotel check-in?",
+          "rewritten_query": "what time is standard hotel check-in?",
+          "routed_group": "guest_stay",
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "02_FINTRAC_24hour_Rule_p27_c1",
+            "02_FINTRAC_24hour_Rule_p28_c1",
+            "02_FINTRAC_24hour_Rule_p26_c1",
+            "01_FINTRAC_LCTR_Guidance_p28_c2",
+            "02_FINTRAC_24hour_Rule_p30_c2"
+          ],
+          "top_weighted_rrf_score": 0.02607086197778953,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "How much is self-parking at the hotel?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "03_FINTRAC_EFT_Reporting_p163_c1",
+          "03_FINTRAC_EFT_Reporting_p150_c1",
+          "03_FINTRAC_EFT_Reporting_p159_c1",
+          "03_FINTRAC_EFT_Reporting_p148_c1",
+          "03_FINTRAC_EFT_Reporting_p190_c1"
+        ],
+        "relevant_ids": [],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "How much is self-parking at the hotel?",
+          "rewritten_query": "how much is self-parking at the hotel?",
+          "routed_group": "parking_transport",
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "03_FINTRAC_EFT_Reporting_p163_c1",
+            "03_FINTRAC_EFT_Reporting_p150_c1",
+            "03_FINTRAC_EFT_Reporting_p159_c1",
+            "03_FINTRAC_EFT_Reporting_p148_c1",
+            "03_FINTRAC_EFT_Reporting_p190_c1"
+          ],
+          "top_weighted_rrf_score": 0.01639344262295082,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What are the EU GDPR penalty caps for data breaches?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "05_OSFI_B13_Cyber_Risk_p19_c3",
+          "06_OSFI_Third_Party_Risk_p16_c2",
+          "03_FINTRAC_EFT_Reporting_p69_c1",
+          "01_FINTRAC_LCTR_Guidance_p18_c1",
+          "04_OSFI_E21_Operational_Risk_p8_c2"
+        ],
+        "relevant_ids": [],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid",
+          "original_query": "What are the EU GDPR penalty caps for data breaches?",
+          "rewritten_query": "what are the eu gdpr penalty caps for data breaches?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "05_OSFI_B13_Cyber_Risk_p19_c3",
+            "06_OSFI_Third_Party_Risk_p16_c2",
+            "03_FINTRAC_EFT_Reporting_p69_c1",
+            "01_FINTRAC_LCTR_Guidance_p18_c1",
+            "04_OSFI_E21_Operational_Risk_p8_c2"
+          ],
+          "top_weighted_rrf_score": 0.02548435171385991,
+          "top_rerank_score": null,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      }
+    ]
+  },
+  {
+    "profile_name": "hybrid_rerank",
+    "aggregate": {
+      "recall@5": 0.5583333333333333,
+      "recall@10": 0.5583333333333333,
+      "ndcg@5": 0.5215212103907806,
+      "mrr": 0.5516666666666666,
+      "qps": 7.805876591745107,
+      "avg_latency_sec": 0.1281086099999996
+    },
+    "per_query": [
+      {
+        "query": "What is a large cash transaction under FINTRAC?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 0.8772153153380493,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p3_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "What is a large cash transaction under FINTRAC?",
+          "rewritten_query": "what is a large cash transaction under fintrac?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p3_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "01_FINTRAC_LCTR_Guidance_p1_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c1"
+          ],
+          "top_weighted_rrf_score": 0.02607086197778953,
+          "top_rerank_score": 7.496257305145264,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "How long do I have to submit a Large Cash Transaction Report after receiving the cash?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "02_FINTRAC_24hour_Rule_p5_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p4_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "How long do I have to submit a Large Cash Transaction Report after receiving the cash?",
+          "rewritten_query": "how long do i have to submit a large cash transaction report after receiving the cash?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "02_FINTRAC_24hour_Rule_p5_c1",
+            "01_FINTRAC_LCTR_Guidance_p3_c1"
+          ],
+          "top_weighted_rrf_score": 0.02591725214676034,
+          "top_rerank_score": 9.375968933105469,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is the 24-hour rule for cash transactions?",
+        "recall@5": 0.6666666666666666,
+        "recall@10": 0.6666666666666666,
+        "ndcg@5": 0.7653606369886217,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "02_FINTRAC_24hour_Rule_p3_c1",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1",
+          "02_FINTRAC_24hour_Rule_p1_c1",
+          "02_FINTRAC_24hour_Rule_p30_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "02_FINTRAC_24hour_Rule_p3_c1",
+          "02_FINTRAC_24hour_Rule_p3_c2"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "What is the 24-hour rule for cash transactions?",
+          "rewritten_query": "what is the 24-hour rule for cash transactions?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "02_FINTRAC_24hour_Rule_p3_c1",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1",
+            "02_FINTRAC_24hour_Rule_p1_c1",
+            "02_FINTRAC_24hour_Rule_p30_c1"
+          ],
+          "top_weighted_rrf_score": 0.02591725214676034,
+          "top_rerank_score": 8.215286254882812,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "Which transaction types does the 24-hour rule apply to?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "02_FINTRAC_24hour_Rule_p3_c1",
+          "02_FINTRAC_24hour_Rule_p10_c2",
+          "02_FINTRAC_24hour_Rule_p7_c2",
+          "02_FINTRAC_24hour_Rule_p1_c1",
+          "02_FINTRAC_24hour_Rule_p2_c1"
+        ],
+        "relevant_ids": [
+          "02_FINTRAC_24hour_Rule_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "Which transaction types does the 24-hour rule apply to?",
+          "rewritten_query": "which transaction types does the 24-hour rule apply to?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "02_FINTRAC_24hour_Rule_p3_c1",
+            "02_FINTRAC_24hour_Rule_p10_c2",
+            "02_FINTRAC_24hour_Rule_p7_c2",
+            "02_FINTRAC_24hour_Rule_p1_c1",
+            "02_FINTRAC_24hour_Rule_p2_c1"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": 8.775383949279785,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "How long must I keep a copy of a Large Cash Transaction Report?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "03_FINTRAC_EFT_Reporting_p28_c1",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "01_FINTRAC_LCTR_Guidance_p31_c1",
+          "02_FINTRAC_24hour_Rule_p7_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "How long must I keep a copy of a Large Cash Transaction Report?",
+          "rewritten_query": "how long must i keep a copy of a large cash transaction report?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "03_FINTRAC_EFT_Reporting_p28_c1",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "01_FINTRAC_LCTR_Guidance_p31_c1",
+            "02_FINTRAC_24hour_Rule_p7_c1"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": 8.70307731628418,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "Does cash include cheques or money orders for FINTRAC reporting purposes?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p3_c1",
+          "01_FINTRAC_LCTR_Guidance_p12_c1",
+          "01_FINTRAC_LCTR_Guidance_p1_c1",
+          "03_FINTRAC_EFT_Reporting_p1_c1",
+          "01_FINTRAC_LCTR_Guidance_p6_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "Does cash include cheques or money orders for FINTRAC reporting purposes?",
+          "rewritten_query": "does cash include cheques or money orders for fintrac reporting purposes?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p3_c1",
+            "01_FINTRAC_LCTR_Guidance_p12_c1",
+            "01_FINTRAC_LCTR_Guidance_p1_c1",
+            "03_FINTRAC_EFT_Reporting_p1_c1",
+            "01_FINTRAC_LCTR_Guidance_p6_c1"
+          ],
+          "top_weighted_rrf_score": 0.025461065573770494,
+          "top_rerank_score": 5.168004989624023,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "Can I delegate my FINTRAC reporting responsibility to a service provider?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "03_FINTRAC_EFT_Reporting_p3_c2",
+          "01_FINTRAC_LCTR_Guidance_p80_c2",
+          "01_FINTRAC_LCTR_Guidance_p2_c2",
+          "01_FINTRAC_LCTR_Guidance_p27_c2",
+          "01_FINTRAC_LCTR_Guidance_p27_c1"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p2_c1",
+          "01_FINTRAC_LCTR_Guidance_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "Can I delegate my FINTRAC reporting responsibility to a service provider?",
+          "rewritten_query": "can i delegate my fintrac reporting responsibility to a service provider?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "03_FINTRAC_EFT_Reporting_p3_c2",
+            "01_FINTRAC_LCTR_Guidance_p80_c2",
+            "01_FINTRAC_LCTR_Guidance_p2_c2",
+            "01_FINTRAC_LCTR_Guidance_p27_c2",
+            "01_FINTRAC_LCTR_Guidance_p27_c1"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": 4.97748327255249,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "When do I need to file a Suspicious Transaction Report?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 0.6309297535714575,
+        "mrr": 0.5,
+        "retrieved_ids": [
+          "03_FINTRAC_EFT_Reporting_p26_c2",
+          "01_FINTRAC_LCTR_Guidance_p12_c1",
+          "03_FINTRAC_EFT_Reporting_p27_c1",
+          "02_FINTRAC_24hour_Rule_p6_c2",
+          "03_FINTRAC_EFT_Reporting_p27_c2"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "When do I need to file a Suspicious Transaction Report?",
+          "rewritten_query": "when do i need to file a suspicious transaction report?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "03_FINTRAC_EFT_Reporting_p26_c2",
+            "01_FINTRAC_LCTR_Guidance_p12_c1",
+            "03_FINTRAC_EFT_Reporting_p27_c1",
+            "02_FINTRAC_24hour_Rule_p6_c2",
+            "03_FINTRAC_EFT_Reporting_p27_c2"
+          ],
+          "top_weighted_rrf_score": 0.02596509783183501,
+          "top_rerank_score": 6.92543888092041,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "If a large cash transaction involves a reportable electronic funds transfer, what must I submit?",
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "ndcg@5": 0.6131471927654584,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "03_FINTRAC_EFT_Reporting_p27_c2",
+          "01_FINTRAC_LCTR_Guidance_p4_c1",
+          "03_FINTRAC_EFT_Reporting_p10_c2",
+          "03_FINTRAC_EFT_Reporting_p7_c2"
+        ],
+        "relevant_ids": [
+          "01_FINTRAC_LCTR_Guidance_p12_c2",
+          "03_FINTRAC_EFT_Reporting_p1_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "If a large cash transaction involves a reportable electronic funds transfer, what must I submit?",
+          "rewritten_query": "if a large cash transaction involves a reportable electronic funds transfer, what must i submit?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "01_FINTRAC_LCTR_Guidance_p12_c2",
+            "03_FINTRAC_EFT_Reporting_p27_c2",
+            "01_FINTRAC_LCTR_Guidance_p4_c1",
+            "03_FINTRAC_EFT_Reporting_p10_c2",
+            "03_FINTRAC_EFT_Reporting_p7_c2"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": 9.462474822998047,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What does OSFI Guideline E-21 cover?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "05_OSFI_B13_Cyber_Risk_p4_c2",
+          "06_OSFI_Third_Party_Risk_p7_c2",
+          "05_OSFI_B13_Cyber_Risk_p2_c1",
+          "06_OSFI_Third_Party_Risk_p6_c2",
+          "06_OSFI_Third_Party_Risk_p15_c3"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p1_c1",
+          "04_OSFI_E21_Operational_Risk_p2_c1",
+          "04_OSFI_E21_Operational_Risk_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "What does OSFI Guideline E-21 cover?",
+          "rewritten_query": "what does osfi guideline e-21 cover?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "05_OSFI_B13_Cyber_Risk_p4_c2",
+            "06_OSFI_Third_Party_Risk_p7_c2",
+            "05_OSFI_B13_Cyber_Risk_p2_c1",
+            "06_OSFI_Third_Party_Risk_p6_c2",
+            "06_OSFI_Third_Party_Risk_p15_c3"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": 4.799948692321777,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is 'tolerance for disruption' under OSFI E-21?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c3",
+          "04_OSFI_E21_Operational_Risk_p13_c2",
+          "04_OSFI_E21_Operational_Risk_p13_c1",
+          "06_OSFI_Third_Party_Risk_p27_c2",
+          "05_OSFI_B13_Cyber_Risk_p14_c1"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c3"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "What is 'tolerance for disruption' under OSFI E-21?",
+          "rewritten_query": "what is 'tolerance for disruption' under osfi e-21?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "04_OSFI_E21_Operational_Risk_p4_c3",
+            "04_OSFI_E21_Operational_Risk_p13_c2",
+            "04_OSFI_E21_Operational_Risk_p13_c1",
+            "06_OSFI_Third_Party_Risk_p27_c2",
+            "05_OSFI_B13_Cyber_Risk_p14_c1"
+          ],
+          "top_weighted_rrf_score": 0.02607086197778953,
+          "top_rerank_score": 4.675192832946777,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is operational resilience according to OSFI?",
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "ndcg@5": 0.3065735963827292,
+        "mrr": 0.3333333333333333,
+        "retrieved_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c1",
+          "04_OSFI_E21_Operational_Risk_p12_c1",
+          "04_OSFI_E21_Operational_Risk_p3_c1",
+          "04_OSFI_E21_Operational_Risk_p15_c1",
+          "04_OSFI_E21_Operational_Risk_p6_c2"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p2_c2",
+          "04_OSFI_E21_Operational_Risk_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "What is operational resilience according to OSFI?",
+          "rewritten_query": "what is operational resilience according to osfi?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "04_OSFI_E21_Operational_Risk_p4_c1",
+            "04_OSFI_E21_Operational_Risk_p12_c1",
+            "04_OSFI_E21_Operational_Risk_p3_c1",
+            "04_OSFI_E21_Operational_Risk_p15_c1",
+            "04_OSFI_E21_Operational_Risk_p6_c2"
+          ],
+          "top_weighted_rrf_score": 0.025359801488833746,
+          "top_rerank_score": 4.208489418029785,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What does a crisis management team do under E-21?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c2",
+          "04_OSFI_E21_Operational_Risk_p18_c1",
+          "06_OSFI_Third_Party_Risk_p7_c2",
+          "05_OSFI_B13_Cyber_Risk_p5_c3",
+          "05_OSFI_B13_Cyber_Risk_p13_c1"
+        ],
+        "relevant_ids": [
+          "04_OSFI_E21_Operational_Risk_p4_c2"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "What does a crisis management team do under E-21?",
+          "rewritten_query": "what does a crisis management team do under e-21?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "04_OSFI_E21_Operational_Risk_p4_c2",
+            "04_OSFI_E21_Operational_Risk_p18_c1",
+            "06_OSFI_Third_Party_Risk_p7_c2",
+            "05_OSFI_B13_Cyber_Risk_p5_c3",
+            "05_OSFI_B13_Cyber_Risk_p13_c1"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": 5.227899551391602,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is the scope of OSFI Guideline B-13?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p25_c3",
+          "04_OSFI_E21_Operational_Risk_p21_c1",
+          "06_OSFI_Third_Party_Risk_p7_c2",
+          "06_OSFI_Third_Party_Risk_p27_c1",
+          "05_OSFI_B13_Cyber_Risk_p4_c2"
+        ],
+        "relevant_ids": [
+          "05_OSFI_B13_Cyber_Risk_p1_c1",
+          "05_OSFI_B13_Cyber_Risk_p3_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "What is the scope of OSFI Guideline B-13?",
+          "rewritten_query": "what is the scope of osfi guideline b-13?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p25_c3",
+            "04_OSFI_E21_Operational_Risk_p21_c1",
+            "06_OSFI_Third_Party_Risk_p7_c2",
+            "06_OSFI_Third_Party_Risk_p27_c1",
+            "05_OSFI_B13_Cyber_Risk_p4_c2"
+          ],
+          "top_weighted_rrf_score": 0.02607086197778953,
+          "top_rerank_score": 4.998822212219238,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What are the three cyber-security capabilities outlined in B-13?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p27_c1",
+          "05_OSFI_B13_Cyber_Risk_p22_c1",
+          "05_OSFI_B13_Cyber_Risk_p23_c1",
+          "05_OSFI_B13_Cyber_Risk_p16_c1",
+          "06_OSFI_Third_Party_Risk_p27_c2"
+        ],
+        "relevant_ids": [
+          "05_OSFI_B13_Cyber_Risk_p2_c1",
+          "05_OSFI_B13_Cyber_Risk_p4_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "What are the three cyber-security capabilities outlined in B-13?",
+          "rewritten_query": "what are the three cyber-security capabilities outlined in b-13?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p27_c1",
+            "05_OSFI_B13_Cyber_Risk_p22_c1",
+            "05_OSFI_B13_Cyber_Risk_p23_c1",
+            "05_OSFI_B13_Cyber_Risk_p16_c1",
+            "06_OSFI_Third_Party_Risk_p27_c2"
+          ],
+          "top_weighted_rrf_score": 0.025148809523809525,
+          "top_rerank_score": 0.15937985479831696,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is the criticality assessment for third-party arrangements under B-10?",
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "ndcg@5": 0.23719771276929622,
+        "mrr": 0.2,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p10_c2",
+          "06_OSFI_Third_Party_Risk_p12_c1",
+          "06_OSFI_Third_Party_Risk_p12_c2",
+          "06_OSFI_Third_Party_Risk_p11_c2",
+          "06_OSFI_Third_Party_Risk_p4_c1"
+        ],
+        "relevant_ids": [
+          "06_OSFI_Third_Party_Risk_p4_c1",
+          "06_OSFI_Third_Party_Risk_p5_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "What is the criticality assessment for third-party arrangements under B-10?",
+          "rewritten_query": "what is the criticality assessment for third-party arrangements under b-10?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p10_c2",
+            "06_OSFI_Third_Party_Risk_p12_c1",
+            "06_OSFI_Third_Party_Risk_p12_c2",
+            "06_OSFI_Third_Party_Risk_p11_c2",
+            "06_OSFI_Third_Party_Risk_p4_c1"
+          ],
+          "top_weighted_rrf_score": 0.025709081446786367,
+          "top_rerank_score": 4.562941551208496,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What is required of third parties regarding incident management under B-10?",
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p22_c1",
+          "06_OSFI_Third_Party_Risk_p22_c2",
+          "04_OSFI_E21_Operational_Risk_p17_c2",
+          "04_OSFI_E21_Operational_Risk_p5_c1",
+          "06_OSFI_Third_Party_Risk_p9_c2"
+        ],
+        "relevant_ids": [
+          "06_OSFI_Third_Party_Risk_p22_c1"
+        ],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "What is required of third parties regarding incident management under B-10?",
+          "rewritten_query": "what is required of third parties regarding incident management under b-10?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p22_c1",
+            "06_OSFI_Third_Party_Risk_p22_c2",
+            "04_OSFI_E21_Operational_Risk_p17_c2",
+            "04_OSFI_E21_Operational_Risk_p5_c1",
+            "06_OSFI_Third_Party_Risk_p9_c2"
+          ],
+          "top_weighted_rrf_score": 0.02622950819672131,
+          "top_rerank_score": 4.818097114562988,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What time is standard hotel check-in?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "02_FINTRAC_24hour_Rule_p28_c1",
+          "02_FINTRAC_24hour_Rule_p27_c1",
+          "02_FINTRAC_24hour_Rule_p26_c1",
+          "01_FINTRAC_LCTR_Guidance_p28_c2",
+          "02_FINTRAC_24hour_Rule_p30_c2"
+        ],
+        "relevant_ids": [],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "What time is standard hotel check-in?",
+          "rewritten_query": "what time is standard hotel check-in?",
+          "routed_group": "guest_stay",
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "02_FINTRAC_24hour_Rule_p28_c1",
+            "02_FINTRAC_24hour_Rule_p27_c1",
+            "02_FINTRAC_24hour_Rule_p26_c1",
+            "01_FINTRAC_LCTR_Guidance_p28_c2",
+            "02_FINTRAC_24hour_Rule_p30_c2"
+          ],
+          "top_weighted_rrf_score": 0.02607086197778953,
+          "top_rerank_score": -4.582159042358398,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "How much is self-parking at the hotel?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "03_FINTRAC_EFT_Reporting_p159_c1",
+          "03_FINTRAC_EFT_Reporting_p163_c1",
+          "03_FINTRAC_EFT_Reporting_p148_c1",
+          "03_FINTRAC_EFT_Reporting_p150_c1",
+          "03_FINTRAC_EFT_Reporting_p190_c1"
+        ],
+        "relevant_ids": [],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "How much is self-parking at the hotel?",
+          "rewritten_query": "how much is self-parking at the hotel?",
+          "routed_group": "parking_transport",
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "03_FINTRAC_EFT_Reporting_p159_c1",
+            "03_FINTRAC_EFT_Reporting_p163_c1",
+            "03_FINTRAC_EFT_Reporting_p148_c1",
+            "03_FINTRAC_EFT_Reporting_p150_c1",
+            "03_FINTRAC_EFT_Reporting_p190_c1"
+          ],
+          "top_weighted_rrf_score": 0.01639344262295082,
+          "top_rerank_score": -11.07701587677002,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      },
+      {
+        "query": "What are the EU GDPR penalty caps for data breaches?",
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "ndcg@5": 0.0,
+        "mrr": 0.0,
+        "retrieved_ids": [
+          "06_OSFI_Third_Party_Risk_p16_c2",
+          "04_OSFI_E21_Operational_Risk_p8_c2",
+          "05_OSFI_B13_Cyber_Risk_p19_c3",
+          "01_FINTRAC_LCTR_Guidance_p18_c1",
+          "03_FINTRAC_EFT_Reporting_p69_c1"
+        ],
+        "relevant_ids": [],
+        "retrieval_diagnostics": {
+          "profile_name": "hybrid_rerank",
+          "original_query": "What are the EU GDPR penalty caps for data breaches?",
+          "rewritten_query": "what are the eu gdpr penalty caps for data breaches?",
+          "routed_group": null,
+          "num_bm25": 10,
+          "num_dense": 10,
+          "num_fused": 10,
+          "num_final": 5,
+          "final_chunk_ids": [
+            "06_OSFI_Third_Party_Risk_p16_c2",
+            "04_OSFI_E21_Operational_Risk_p8_c2",
+            "05_OSFI_B13_Cyber_Risk_p19_c3",
+            "01_FINTRAC_LCTR_Guidance_p18_c1",
+            "03_FINTRAC_EFT_Reporting_p69_c1"
+          ],
+          "top_weighted_rrf_score": 0.02548435171385991,
+          "top_rerank_score": -9.629262924194336,
+          "no_answer_thresholds": {
+            "min_rerank_score": 0.25,
+            "min_fused_score": 0.005
+          }
+        }
+      }
+    ]
+  }
+]

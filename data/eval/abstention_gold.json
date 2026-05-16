@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "question": "What time is standard hotel check-in?",
+    "category": "out_of_scope_hotel",
+    "rationale": "Hotel-domain question. Tests AEGIS abstains correctly on the prior corpus's domain after the fraud/AML corpus swap.",
+    "expected_decision": "abstained",
+    "expected_min_rerank_score": null,
+    "abstention_threshold_check": "top_rerank_score < 0.25"
+  },
+  {
+    "id": 1,
+    "question": "How much is self-parking at the hotel?",
+    "category": "out_of_scope_hotel",
+    "rationale": "Hotel-domain question. Same purpose as id 0, different topic.",
+    "expected_decision": "abstained",
+    "expected_min_rerank_score": null,
+    "abstention_threshold_check": "top_rerank_score < 0.25"
+  },
+  {
+    "id": 2,
+    "question": "What are the EU GDPR penalty caps for data breaches?",
+    "category": "out_of_scope_regulatory_adjacent",
+    "rationale": "Adjacent regulatory domain (cyber + financial penalties) but outside Canadian fraud/AML scope. Tests that AEGIS rejects topically-similar-but-out-of-scope queries — harder than pure off-topic.",
+    "expected_decision": "abstained",
+    "expected_min_rerank_score": null,
+    "abstention_threshold_check": "top_rerank_score < 0.25"
+  }
+]

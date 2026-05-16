@@ -1,122 +1,104 @@
 [
   {
     "id": 0,
-    "question": "What time is standard check-in?",
-    "ground_truth": "Standard check-in begins at 3:00 PM.",
+    "question": "What is a large cash transaction under FINTRAC?",
+    "ground_truth": "A large cash transaction occurs when you receive $10,000 or more in cash in a single transaction.",
     "answer_type": "semantic"
   },
   {
     "id": 1,
-    "question": "Can I check in at noon for free?",
-    "ground_truth": "No. Guests may request early access beginning at 12:00 PM for a $35 fee.",
+    "question": "How long do I have to submit a Large Cash Transaction Report after receiving the cash?",
+    "ground_truth": "You must submit a Large Cash Transaction Report to FINTRAC within 15 calendar days after the day on which you receive the cash.",
     "answer_type": "semantic"
   },
   {
     "id": 2,
-    "question": "How much is self-parking?",
-    "ground_truth": "Self-parking is $29 per night in the underground garage.",
+    "question": "What is the 24-hour rule for cash transactions?",
+    "ground_truth": "When two or more cash amounts totaling $10,000 or more are received within a consecutive 24-hour window — conducted by the same person or entity, on behalf of the same person or entity, or for the same beneficiary — they must be aggregated and reported as a Large Cash Transaction Report.",
     "answer_type": "semantic"
   },
   {
     "id": 3,
-    "question": "Is valet parking free for all guests?",
-    "ground_truth": "No, valet service is $42 per night.",
+    "question": "Which transaction types does the 24-hour rule apply to?",
+    "ground_truth": "The 24-hour rule applies to large cash transactions, large virtual currency transactions, electronic funds transfers, and casino disbursements.",
     "answer_type": "semantic"
   },
   {
     "id": 4,
-    "question": "What is the late checkout fee?",
-    "ground_truth": "Late checkout until 2:00 PM may be approved for $50.",
+    "question": "How long must I keep a copy of a Large Cash Transaction Report?",
+    "ground_truth": "You must keep a copy of the Large Cash Transaction Report for at least 5 years from the date the report was created.",
     "answer_type": "semantic"
   },
   {
     "id": 5,
-    "question": "Can I stay after 2 PM without paying?",
-    "ground_truth": "No, departures later than the approved window may be billed as an additional night.",
+    "question": "Does cash include cheques or money orders for FINTRAC reporting purposes?",
+    "ground_truth": "No. Cash includes coins and bank notes issued by the Bank of Canada, coins and bank notes of countries other than Canada, and fiat currency. It does not include cheques, money orders, or other similar negotiable instruments.",
     "answer_type": "semantic"
   },
   {
     "id": 6,
-    "question": "Are pets allowed and what is the fee?",
-    "ground_truth": "I cannot find sufficient evidence in the source documents to answer this safely.",
+    "question": "Can I delegate my FINTRAC reporting responsibility to a service provider?",
+    "ground_truth": "No. A service provider can submit a Large Cash Transaction Report on your behalf, but as the reporting entity you remain ultimately responsible for meeting all requirements under the PCMLTFA. The legal responsibility cannot be delegated.",
     "answer_type": "semantic"
   },
   {
     "id": 7,
-    "question": "Do service animals pay a fee?",
-    "ground_truth": "Service animals are not billed as pets for fee purposes, though documented damage may still be charged.",
+    "question": "When do I need to file a Suspicious Transaction Report?",
+    "ground_truth": "A Suspicious Transaction Report must be submitted to FINTRAC when there are reasonable grounds to suspect that a transaction is related to the commission, or attempted commission, of a money laundering or terrorist activity financing offence.",
     "answer_type": "semantic"
   },
   {
     "id": 8,
-    "question": "What are quiet hours?",
-    "ground_truth": "Quiet hours are observed from 10:00 PM to 7:00 AM.",
+    "question": "If a large cash transaction involves a reportable electronic funds transfer, what must I submit?",
+    "ground_truth": "You must submit both an Electronic Funds Transfer Report and a Large Cash Transaction Report to FINTRAC.",
     "answer_type": "semantic"
   },
   {
     "id": 9,
-    "question": "Is smoking allowed on balconies?",
-    "ground_truth": "No, smoking and vaping are prohibited in guestrooms and on balconies.",
+    "question": "What does OSFI Guideline E-21 cover?",
+    "ground_truth": "OSFI Guideline E-21 sets expectations for federally regulated financial institutions on operational risk management and operational resilience — including governance, the operational risk management framework, identification of critical operations, tolerances for disruption, and scenario testing.",
     "answer_type": "semantic"
   },
   {
     "id": 10,
-    "question": "What internet network should I use?",
-    "ground_truth": "Join SweetSpot_Guest and complete the browser-based sign-in.",
+    "question": "What is 'tolerance for disruption' under OSFI E-21?",
+    "ground_truth": "Tolerance for disruption is the maximum disruption from an operational risk event a financial institution can withstand under a range of severe but plausible scenarios. It includes outage time, diminishment of service, loss of data, and extent of customer impact.",
     "answer_type": "semantic"
   },
   {
     "id": 11,
-    "question": "Is parking always covered for corporate accounts?",
-    "ground_truth": "No, parking is not automatically covered; coverage depends on the authorization on file.",
+    "question": "What is operational resilience according to OSFI?",
+    "ground_truth": "Operational resilience is the ability of a financial institution to deliver operations — especially critical operations — through disruption, by preventing, detecting, responding to, and recovering from adverse events.",
     "answer_type": "semantic"
   },
   {
     "id": 12,
-    "question": "What happens if I don’t have a receipt?",
-    "ground_truth": "The claimant should provide a written explanation and any secondary evidence available.",
+    "question": "What does a crisis management team do under E-21?",
+    "ground_truth": "A crisis management team is a senior group within a financial institution responsible for making decisions, coordinating, and providing oversight of the development and implementation of strategies to address and mitigate potential or actual crises that could affect operations, reputation, or financial stability.",
     "answer_type": "semantic"
   },
   {
     "id": 13,
-    "question": "Can I expense valet parking?",
-    "ground_truth": "Valet may be expensed only if approved or operationally necessary.",
+    "question": "What is the scope of OSFI Guideline B-13?",
+    "ground_truth": "OSFI Guideline B-13 establishes expectations for technology and cyber risk management at federally regulated financial institutions. It is implemented from a risk-based perspective that varies with the FRFI's size, nature, scope, complexity of operations, and risk profile, and is organized around governance and risk management, technology operations and resilience, and cyber security.",
     "answer_type": "semantic"
   },
   {
     "id": 14,
-    "question": "What is the garage height limit?",
-    "ground_truth": "The maximum garage clearance is 2.05 m.",
+    "question": "What are the cyber-security capabilities outlined in B-13?",
+    "ground_truth": "B-13's cyber security domain is organized around four capabilities: Identify, Defend, Detect, and Respond, recover and learn — supporting the confidentiality, integrity, and availability of technology assets.",
     "answer_type": "semantic"
   },
   {
     "id": 15,
-    "question": "How much is thermal circuit day access at the spa?",
-    "ground_truth": "Thermal circuit day access is $45 unless waived with an eligible treatment.",
+    "question": "What does 'criticality' mean for third-party arrangements under B-10?",
+    "ground_truth": "Criticality denotes a third-party arrangement's importance to the FRFI's operations, strategy, financial condition, or reputation. Critical arrangements are those which, if disrupted, could put at risk the continued operation of the FRFI or its safety and soundness.",
     "answer_type": "semantic"
   },
   {
     "id": 16,
-    "question": "What is the benchmark rate for personal vehicle mileage reimbursement?",
-    "ground_truth": "The benchmark rate is $0.58 per mile unless a lower approved rate applies.",
-    "answer_type": "semantic"
-  },
-  {
-    "id": 17,
-    "question": "What are the service fees for private food-and-beverage events?",
-    "ground_truth": "Private food-and-beverage events are subject to an 18% service charge plus a 2% administration fee.",
-    "answer_type": "semantic"
-  },
-  {
-    "id": 18,
-    "question": "Should accessible room requests be prioritized over aesthetic preferences?",
-    "ground_truth": "Yes, accessible-room requests and medical accommodations should be prioritized over aesthetic preferences.",
-    "answer_type": "semantic"
-  },
-  {
-    "id": 19,
-    "question": "Does the hotel have a swimming pool?",
-    "ground_truth": "I cannot find sufficient evidence in the source documents to answer this safely.",
+    "question": "What is required of third parties regarding incident management under B-10?",
+    "ground_truth": "FRFIs should ensure their third parties have clearly defined and documented processes for identifying, investigating, escalating, remediating, and notifying the FRFI in a timely manner of incidents — including subcontractor incidents — that could impact the third party's ability to deliver the contracted goods or services.",
     "answer_type": "semantic"
   }
 ]
